@@ -2,19 +2,13 @@
   $is-dark: true
 );
 
-// $min-two-column-width: 64em;
-$min-two-column-width: 60em;
+$root-font-size-coefficient: 0.8;
+$min-two-column-width: $root-font-size-coefficient * 60em;
 $font: 游ゴシック, Arial, sans-serif;
 
 :root {
   box-sizing: border-box;
-  font-size: calc(0.5em + 1vw);
-}
-
-@media (min-width: 50em) {
-  :root {
-    font-size: 0.8em;
-  }
+  font-size: $root-font-size-coefficient * 1em;
 }
 
 *,
@@ -43,40 +37,44 @@ a {
   }
 }
 
+h1, h2 {
+  color: theme.$link;
+  font-size: 1rem;
+  margin-top: 2em;
+  margin-bottom: 0;
+}
+
+h3, h4, h5, h6 {
+  font-size: 1rem;
+  border-top: 1px solid theme.$link;
+}
+
 .container {
   width: 100%;
   margin: 0;
-  // background-color: theme.$bg2;
 }
 
-@media(min-width: $min-two-column-width) {
-  .container {
-    // margin: 0 auto;
-  }
-}
-
-// $nav-ratio: 25%;
-// $nav-ratio: calc(50vw - 16em);
-// $main-width: 48em;
-// $main-left-width: 16em;
-// $main-width: 53em;
-// $main-left-width: 21em;
 $main-width: 48em;
 $main-left-width: 18em;
 $nav-ratio: calc(50vw - $main-left-width);
+$footer-height: 7em;
 
 .page-header {
   width: 100%;
-  // max-width: 880px;
-  // margin: 0 auto;
-  // margin: 0 1em;
   margin: 0;
   position: fixed;
   top: 0em;
-  // height: 1em;
   background-color: theme.$bg0;
-  // background-color: red;
-  // padding-left: 1em;
+  h1, h2 {
+    color: theme.$title;
+    font-size: 1rem;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    margin: 1em;
+    margin-top: 0.7em;
+    margin-bottom: 0.7em;
+    margin-left: 0.8em;
+  }
 }
 
 @media (min-width: $min-two-column-width) {
@@ -85,54 +83,39 @@ $nav-ratio: calc(50vw - $main-left-width);
     top: 0em;
     left: 0;
     margin: 0 auto;
-    width: $nav-ratio;//30%;
-    // height: 1em;
+    width: $nav-ratio;
     padding-right: 1em;
     text-align: right;
+    h1, h2 {
+      margin-top: 1rem;
+      margin-right: 0em;
+    }
   }
 }
 
 main {
-  // min-height: 1000px;
-  // min-height: 100vh;
   margin: 3em 1em 0em 1em;
-  min-height: calc(100vh - 11.5em);
+  min-height: calc(100vh - $footer-height - 3em); // 3em is margin-top
+  h1:first-child, h2:first-child {
+    margin-top: 0;
+  }
 }
 
 @media (min-width: $min-two-column-width) {
   main {
-    margin-top: 1em;
-    margin-left: $nav-ratio;
-    margin-right: 1em;
-    margin-bottom: 0;
+    margin: 0 0 0 $nav-ratio;
     width: $main-width;
-    padding-right: 1em;
-    // overflow-wrap: break-word;
-    min-height: calc(100vh - 9.5em);
+    padding: 1em 1em 1.5em 0;
+    min-height: calc(100vh - $footer-height);
   }
 }
 
-
-h1 {
-  color: theme.$title;
-  font-size: 1rem;
-  // font-size: 1.25rem;
-  text-transform: uppercase;
-  margin: 1em;
-}
-
-@media (min-width: $min-two-column-width) {
-  h1 {
-    margin-right: 0em;
-  }
-}
 
 .menu {
   position: fixed;
   top: 3em;
   margin-top: 0;
   width: 100%;
-  // background-color: blue;
   background-color: theme.$bg1;
 }
 .menu-toggle {
@@ -178,10 +161,7 @@ h1 {
     top: 3em;
     bottom: 0;
     left: 0;
-    // width: 30%;
     width: $nav-ratio;
-    // width: 25em;
-    // right: 70%;
     text-align: right;
     background-color: transparent;
   }
@@ -218,7 +198,6 @@ ul.site-nav, ul.sub-nav {
   }
   > li {
     margin-top: 0.5em;
-    // margin-bottom: 1em;
   }
 }
 
@@ -228,12 +207,12 @@ ul.site-nav, ul.sub-nav {
   }
   .sub-nav {
     margin-right: 1em;
-    // background-color: transparent;
   }
 }
+
 footer {
   text-align: center;
-  // background-color: theme.$bg2; // for debug
+  margin-top: 0;
   height: 7em;
   display: flex;
   flex-direction: column;
@@ -248,23 +227,6 @@ footer {
     margin-left: $nav-ratio;
     text-align: left;
   }
-}
-
-h2 {
-  color: theme.$link;
-  font-size: 1rem;
-}
-h3, h4, h5, h6 {
-  // color: theme.$red;
-  font-size: 1rem;
-  // &::before {
-  //   content: '===========================================================================================';
-  //   color: theme.$link;
-  //   width: 100%;
-  //   overflow-x: hidden;
-  //   display: block;
-  // }
-  border-top: 1px solid theme.$link;
 }
 
 a.date {

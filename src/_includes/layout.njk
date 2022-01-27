@@ -9,10 +9,18 @@
   <body>
     <div class="container">
       <header class="page-header">
-        <h1>{{ metadata.title }}</h1>
+        {% if title %}
+          <h2><a href="/">{{ metadata.title }}</a></h2>
+        {% else %}
+          <h1><a href="/">{{ metadata.title }}</a></h1>
+        {% endif %}
       </header>
       <main>
-        <h2>{{ title }}</h2>
+        {% if title %}
+          <h1>{{ title }}</h1>
+        {% else %}
+          <h2>{{ title }}</h2>
+        {% endif %}
         {{ content | safe }}
       </main>
       <nav class="menu" id="main-menu">
