@@ -5,6 +5,17 @@ let graph = new DependencyGraph();
 let cacheKeys = new Map();
 
 module.exports = function(eleventyConfig) {
+  // Config for old contents
+  eleventyConfig.addPassthroughCopy("src/articles/images");
+  eleventyConfig.addNunjucksFilter("safeToDateString", function(date) {
+    if (date instanceof Date) {
+      return date.toDateString();
+    } else {
+      return "";
+    }
+  });
+
+  // Config for SCSS
   eleventyConfig.addTemplateFormats("scss");
   eleventyConfig.addExtension("scss", {
     outputFileExtension: "css",

@@ -1,0 +1,90 @@
+{
+  "version": 7,
+  "title": "New release info",
+  "message": "Twlikes 5.1.0 was released with lifetime plan.\n\nPlease download twlikes 5.1.0 from the App Store.",
+  "5.0.0": {
+    "version": 5000001,
+    "title": "New release info",
+    "message": "Twlikes 5.1.0 was released with lifetime plan.\n\nPlease download twlikes 5.1.0 from the App Store."
+  },
+  "5.1.0": {
+    "version": 5010001,
+    "title": "Twlikes 5.2.0 was released. I fixed the performance, memory usage and a session expiration bug in twlikes 5.2.0.\n\nPlease download twlikes 5.2.0 from the App Store.",
+    "message": ""
+  },
+  "5.2.0": {
+    "version": 5020000,
+    "title": "Bug info",
+    "message": ""
+  },
+  "5.2.1": {
+    "version": 5020100,
+    "title": "Bug info",
+    "message": ""
+  },
+  "5.3.0": {
+    "version": 5030000,
+    "title": "Bug info",
+    "message": ""
+  },
+  "5.3.1": {
+    "version": 5030100,
+    "title": "Bug info",
+    "message": ""
+  },
+  "5.3.2": {
+    "version": 5030100,
+    "title": "Bug info",
+    "message": ""
+  },
+  "5.4.0": {
+    "version": 5040000,
+    "title": "Bug info",
+    "message": ""
+  },
+  "5.4.1": {
+    "version": 5040103,
+    "title": "Bug info",
+    "message": "There is a bug that causes an error \"UNIQUE constraint failed: users.id\" on rare occasions. The bug was fixed in twlikes 5.4.2 and you can download it from the App Store."
+  },
+  "5.4.2": {
+    "version": 5040203,
+    "title": "Bug info",
+    "message": "There is a bug that causes the app to crash when opening the in-app purchase screen on iOS 9.\n\nCould you please update the app to the latest version."
+  },
+  "5.4.3": {
+    "version": 5040300,
+    "title": "Bug info",
+    "message": ""
+  },
+  "5.4.4": {
+    "version": 5040402,
+    "title": "Bug info",
+    "message": "Twlikes 5.4.4 tried to fix \"UNIQUE constraint failed: users.id\" error, which happens on rare occasions, but failed.\nI will investigate it again and fix it as soon as possible.\nThank you very much for your patience.\n\n\"Upload to iCloud\" action for exporting has a bug which is causing the app to crash. The bug will be fixed in the next version."
+  },
+  "5.4.5": {
+    "version": 5040500,
+    "title": "Bug info",
+    "message": ""
+  },
+  "5.4.6": {
+    "version": 5040600,
+    "title": "Bug info",
+    "message": ""
+  },
+  "5.4.7": {
+    "version": 5040700,
+    "title": "Bug info",
+    "message": ""
+  },
+  "5.4.8": {
+    "version": 5040800,
+    "title": "Bug info",
+    "message": ""
+  },
+  "5.4.9": {
+    "version": 5040900,
+    "title": "Bug info",
+    "message": ""
+  }
+}
