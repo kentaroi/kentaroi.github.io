@@ -1,0 +1,116 @@
+$is-dark: false !default;
+$contrast-dark: 'medium' !default;
+$contrast-light: 'medium' !default;
+
+$dark0-hard:     #1d2021; // 29-32-33
+$dark0:          #282828; // 40-40-40
+$dark0-soft:     #32302f; // 50-48-47
+$dark1:          #3c3836; // 60-56-54
+$dark2:          #504945; // 80-73-69
+$dark3:          #665c54; // 102-92-84
+$dark4:          #7c6f64; // 124-111-100
+$dark4-256:      #7c6f64; // 124-111-100
+
+$gray-245:       #928374; // 146-131-116
+$gray-244:       #928374; // 146-131-116
+
+$light0-hard:    #f9f5d7; // 249-245-215
+$light0:         #fbf1c7; // 253-244-193
+$light0-soft:    #f2e5bc; // 242-229-188
+$light1:         #ebdbb2; // 235-219-178
+$light2:         #d5c4a1; // 213-196-161
+$light3:         #bdae93; // 189-174-147
+$light4:         #a89984; // 168-153-132
+$light4-256:     #a89984; // 168-153-132
+
+$bright-red:     #fb4934; // 251-73-52
+$bright-green:   #b8bb26; // 184-187-38
+$bright-yellow:  #fabd2f; // 250-189-47
+$bright-blue:    #83a598; // 131-165-152
+$bright-purple:  #d3869b; // 211-134-155
+$bright-aqua:    #8ec07c; // 142-192-124
+$bright-orange:  #fe8019; // 254-128-25
+
+$neutral-red:    #cc241d; // 204-36-29
+$neutral-green:  #98971a; // 152-151-26
+$neutral-yellow: #d79921; // 215-153-33
+$neutral-blue:   #458588; // 69-133-136
+$neutral-purple: #b16286; // 177-98-134
+$neutral-aqua:   #689d6a; // 104-157-106
+$neutral-orange: #d65d0e; // 214-93-14
+
+$faded-red:      #9d0006; // 157-0-6
+$faded-green:    #79740e; // 121-116-14
+$faded-yellow:   #b57614; // 181-118-20
+$faded-blue:     #076678; // 7-102-120
+$faded-purple:   #8f3f71; // 143-63-113
+$faded-aqua:     #427b58; // 66-123-88
+$faded-orange:   #af3a03; // 175-58-3
+
+$bg0: $light0;
+@if $contrast-light == 'soft' {
+  $bg0: $light0-soft;
+} @else if $contrast-light == 'hard' {
+  $bg0: $light0-hard;
+}
+
+// Color difinitions for $is-dark == false
+$bg1: $light1;
+$bg2: $light2;
+$bg3: $light3;
+$bg4: $light4;
+
+$gray: $gray-244;
+
+$fg0: $dark0;
+$fg1: $dark1;
+$fg2: $dark2;
+$fg3: $dark3;
+$fg4: $dark4;
+
+$fg4-256: $dark4-256;
+
+$red: $faded-red;
+$green: $faded-green;
+$yellow: $faded-yellow;
+$blue: $faded-blue;
+$purple: $faded-purple;
+$aqua: $faded-aqua;
+$orange: $faded-orange;
+
+@if $is-dark {
+  $bg0: $dark0;
+  @if $contrast-dark == 'soft' {
+    $bg0: $dark0-soft;
+  } @else if $contrast-dark == 'hard' {
+    $bg0: $dark0-hard;
+  }
+
+  $bg1: $dark1;
+  $bg2: $dark2;
+  $bg3: $dark3;
+  $bg4: $dark4;
+
+  $gray: $gray-245;
+
+  $fg0: $light0;
+  $fg1: $light1;
+  $fg2: $light2;
+  $fg3: $light3;
+  $fg4: $light4;
+
+  $fg4-256: $light4-256;
+
+  $red: $bright-red;
+  $green: $bright-green;
+  $yellow: $bright-yellow;
+  $blue: $bright-blue;
+  $purple: $bright-purple;
+  $aqua: $bright-aqua;
+  $orange: $bright-orange;
+}
+
+$title: $blue;
+$menu: $blue;
+$link: $blue;
+

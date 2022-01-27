@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>{{ title }} | {{ metadata.title }}</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="page-header">
+        <h1>{{ metadata.title }}</h1>
+      </header>
+      <main>
+        <h2>{{ title }}</h2>
+        {{ content | safe }}
+      </main>
+      <nav class="menu" id="main-menu">
+        <button class="menu-toggle" id="toggle-menu">
+          toggle menu
+        </button>
+        <div class="menu-dropdown">
+          <ul class="site-nav">
+            <li><a href="/">Blog</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Feed</a></li>
+            <li><a href="/">About</a></li>
+          </ul>
+          <ul class="sub-nav">
+            <li><a href="" class="date">January 2022</a></li>
+          </ul>
+          <ul class="sub-nav">
+            <li> <a href="">@autoclosureはすごくいい</a></li>
+            <li><a href="">@_disfavoredOverloadについて</a></li>
+            <li><a href="">PP.swiftを作った話</a></li>
+            <li><a href="">Flutterは思ったより重要なのではないか</a></li>
+            <li><a href="">SwiftUIの正しさ</a></li>
+            <li><a href="">Swiftのつらさ</a></li>
+            <li><a href="">絵に描いた餅のベーシックインカム（BI）</a></li>
+            <li><a href="">DWARFフォーマット</a></li>
+            <li><a href="">Swiftのスタックトレース（callStackSymbols）を読みやすくする話</a></li>
+            <li><a href="">Swiftのスタックトレースの行番号を取得する話</a></li>
+            <li><a href="">Ember Octaneとは</a></li>
+            <li><a href="">このブログは11ty(Eleventy)でできている</a></li>
+            <li><a href="">@kentaroi/eleventy-plugin-sassを作った話</a></li>
+            <li><a href="">11ty(Eleventy)のプラグインの作り方</a></li>
+            <li><a href="">失われた30年の理由のひとつは終身雇用ではないか？</a></li>
+            <li><a href="">クソのようなSNSを断つ</a></li>
+            <li><a href="">佐々木俊尚という人は少し面白い</a></li>
+            <li><a href="">失われたWeb2.0</a></li>
+            <li><a href="">Bottom aligned UITableView</a></li>
+            <li><a href="">Blockchainはやばいぐらい重要</a></li>
+            <li><a href="">Web3 (Blockchain)をできるだけちゃんと説明する</a></li>
+            <li><a href="">ネガティブな大人の話は聞かない方がいい</a></li>
+          </ul>
+        </div>
+      </nav>
+      <footer>
+        <p>
+        Built with <a href="https://www.11ty.dev/">Eleventy</a>. Theme colors were borrowed from <a href="https://github.com/morhetz/gruvbox">gruvbox</a> by <a href="https://github.com/morhetz">Pavel Pertsev</a>.
+        </p>
+        <p>
+          Copyright © 2011–2022 Kentaro Imai
+        </p>
+      </footer>
+    </div>
+    <script defer>
+      var button = document.getElementById('toggle-menu');
+      button.addEventListener('click', function(event) {
+        event.preventDefault();
+        var menu = document.getElementById('main-menu');
+        menu.classList.toggle('is-open');
+      });
+    </script>
+  </body>
+</html>
