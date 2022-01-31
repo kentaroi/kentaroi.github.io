@@ -1,0 +1,32 @@
+$use-tag-cloud-specific-color: true !default;
+$tag-color: #a33 !default;
+
+ul.tag-cloud {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  line-height: 2.5rem;
+  a {
+    @if $use-tag-cloud-specific-color {
+      color: $tag-color;
+      &:hover {
+        background-color: darken($tag-color, 30%);
+      }
+    }
+    display: block;
+    font-size: 1.5rem;
+    padding: 0.125rem 0.25rem;
+    text-decoration: none;
+    position: relative;
+    --size: 4;
+    font-size: calc(var(--size) * 0.12rem + 0.4rem);
+    opacity: calc((15 - (10 - var(--size))) / 15); 
+  }
+}
+
+@for $i from 1 through 10 {
+  ul.tag-cloud a[data-weight="#{$i}"] { --size: #{$i}; }
+}
