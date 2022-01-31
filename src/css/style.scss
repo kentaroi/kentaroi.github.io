@@ -1,6 +1,9 @@
 @use 'gruvbox' as theme with (
   $is-dark: true
 );
+@use 'tag-cloud' with (
+  $use-tag-cloud-specific-color: false
+);
 
 $root-font-size-coefficient: 0.8;
 $min-two-column-width: $root-font-size-coefficient * 60em;
@@ -207,6 +210,11 @@ ul.site-nav, ul.related-nav {
   }
   .related-nav {
     margin-right: 1em;
+  }
+  .tag-cloud {
+    margin-right: 1em;
+    margin-left: auto;
+    max-width: 20em;
   }
 }
 
