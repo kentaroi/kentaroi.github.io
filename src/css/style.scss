@@ -113,6 +113,79 @@ main {
   }
 }
 
+article {
+  margin-bottom: 35em;
+}
+
+time {
+  color: theme.$gray;
+  &.year {
+    a {
+      color: theme.$neutral-yellow;
+      &:hover {
+        background-color: darken(theme.$neutral-yellow, 30%);
+      }
+    }
+  }
+  &.month {
+    a {
+      color: theme.$yellow;
+      &:hover {
+        background-color: darken(theme.$yellow, 45%);
+      }
+    }
+  }
+}
+
+.post-meta {
+  margin-top: 0;
+  display: flex;
+  list-style-type: none;
+  .tag-list {
+    margin-left: auto;
+  }
+}
+
+.tag-list {
+  margin-top: 0;
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
+  align-items: right;
+  list-style-type: none;
+  > li {
+    padding: 0 0.5em;
+  }
+  > li + li {
+    margin-top: 0;
+  }
+}
+a.tag {
+  color: theme.$tag;
+  &:hover {
+    background-color: darken(theme.$tag, 30%);
+  }
+}
+
+.years {
+  margin-top: 1em;
+  list-style-type: none;
+}
+
+.months {
+  margin-top: 1em;
+  list-style-type: none;
+}
+
+.posts {
+  margin-top: 0.5em;
+  list-style-type: none;
+  padding-inline-start: 0;
+  > li + li {
+    margin-top: 0.5em;
+  }
+}
+
 
 .menu {
   position: fixed;
@@ -200,7 +273,7 @@ ul.site-nav, ul.related-nav {
     color: theme.$menu;
   }
   > li {
-    margin-top: 0.5em;
+    margin-top: 1em;
   }
 }
 
@@ -210,6 +283,7 @@ ul.site-nav, ul.related-nav {
   }
   .related-nav {
     margin-right: 1em;
+    margin-bottom: $footer-height;
   }
   .tag-cloud {
     margin-right: 1em;
