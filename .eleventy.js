@@ -15,6 +15,13 @@ module.exports = function(eleventyConfig) {
     }
   });
 
+  // For debug
+  eleventyConfig.addFilter("inspect", function(obj, desc) {
+    desc ??= ''
+    console.log("INSPECT %s: %O", desc, obj);
+  });
+
+
   // Config for SCSS
   eleventyConfig.addTemplateFormats("scss");
   eleventyConfig.addExtension("scss", {
