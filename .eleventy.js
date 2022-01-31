@@ -1,5 +1,9 @@
 const sass = require("sass");
 const path = require("node:path");
+const collections = require("./src/_11ty/collections");
+const filters     = require("./src/_11ty/filters");
+const shortcodes  = require("./src/_11ty/shortcodes");
+
 const DependencyGraph = require("dependency-graph").DepGraph;
 let graph = new DependencyGraph();
 let cacheKeys = new Map();
@@ -20,6 +24,19 @@ module.exports = function(eleventyConfig) {
     desc ??= ''
     console.log("INSPECT %s: %O", desc, obj);
   });
+
+  // Custom collections, filters, and shortcodes
+  for (let name in collections) {
+    eleventyConfig.addCollection(name, collections[name]);
+  }
+
+  for (let name in filters) {
+    eleventyConfig.addNunjucksFilter(name, filters[name]);
+  }
+
+  for (let name in shortcodes) {
+    eleventyConfig.addNunjucksShortcode(name, shortcodes[name]);
+  }
 
 
   // Config for SCSS
