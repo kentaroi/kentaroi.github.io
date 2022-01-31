@@ -1,0 +1,20 @@
+---
+pagination:
+  data: collections.months
+  size: 1
+  alias: thisMonth
+permalink: "{{ thisMonth.year }}/{{ thisMonth.month | monthIndexToNumeric }}/index.html"
+eleventyComputed:
+  title: "{{ thisMonth.month | monthIndexToName }} {{ thisMonth.year }}"
+layout: 'layout.njk'
+---
+{%- for post in thisMonth.posts -%}
+  <article>
+    <h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
+    <div class='post-meta'>
+      {% timeTagForDate post.date %}
+      {% tagList post.data.tags | except("blog") %}
+    </div>
+    {{ post.templateContent | safe }}
+  </article>
+{%- endfor -%}
