@@ -1,4 +1,4 @@
 {
   "permalink": "/{{ page.date | year }}/{{ page.date | month }}/{{ page.fileSlug }}/",
-  "layout": "layout.njk"
+  "layout": "blog-layout.njk"
 }
