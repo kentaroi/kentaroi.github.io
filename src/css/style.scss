@@ -73,6 +73,7 @@ h3, h4, h5, h6 {
 $main-width: 48em;
 $main-left-width: 18em;
 $nav-ratio: calc(50vw - $main-left-width);
+$gutter: 2em;
 $footer-height: 7em;
 
 .container {
@@ -109,7 +110,7 @@ $footer-height: 7em;
     left: 0;
     margin: 0 auto;
     width: $nav-ratio;
-    padding-right: 1em;
+    padding-right: $gutter;
     text-align: right;
 
     &__site-title {
@@ -310,7 +311,7 @@ $footer-height: 7em;
 
 @media (min-width: $min-two-column-width) {
   .site-nav {
-    margin-right: 1em;
+    margin-right: $gutter;
   }
 }
 
@@ -357,7 +358,7 @@ $footer-height: 7em;
 
 @media (min-width: $min-two-column-width) {
   .related-nav {
-    margin-right: 1em;
+    margin-right: $gutter;
     margin-bottom: $footer-height;
   }
 }
@@ -366,7 +367,7 @@ $footer-height: 7em;
 
 @media (min-width: $min-two-column-width) {
   .tag-cloud {
-    margin-right: 1em;
+    margin-right: $gutter;
     margin-left: auto;
     max-width: 20em;
   }
