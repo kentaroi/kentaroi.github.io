@@ -33,8 +33,9 @@ module.exports = function(eleventyConfig) {
   // Markdown
   let md = require("markdown-it")({
     html: true
-  }). // This is 11ty's default option
-    use(require('markdown-it-attrs'));
+  }) // This is 11ty's default option
+    .use(require('markdown-it-bracketed-spans'))
+    .use(require('markdown-it-attrs'));
 
   // Add class="main__link" attribute to links which do not have
   // class attribute.
