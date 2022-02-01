@@ -31,13 +31,15 @@ module.exports = function(eleventyConfig) {
 
 
   // Markdown
+  let md = require("markdown-it")({
+    html: true
+  }). // This is 11ty's default option
+    use(require('markdown-it-attrs'));
+
   // Add class="main__link" attribute to links which do not have
   // class attribute.
   // This fix is applied for markdown files whose layouts are
   // layout.njk or blog-layout.njk.
-  let md = require("markdown-it")({
-    html: true
-  }); // This is 11ty's default option
   let defaultRenderer = md.renderer.rules.link_open || function(tokens, idx, options, env, self) {
     return self.renderToken(tokens, idx, options);
   }
