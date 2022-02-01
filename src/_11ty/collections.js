@@ -1,13 +1,13 @@
 module.exports = {
   recent: function(collectionApi) {
-    return collectionApi.getFilteredByTag("blog").
-      sort((a, b) => b.date.getTime() - a.date.getTime()).
-      slice(0, 10);
+    return collectionApi.getFilteredByTag("blog")
+      .sort((a, b) => b.date.getTime() - a.date.getTime())
+      .slice(0, 10);
   },
   years: function(collectionApi) {
-    let m = collectionApi.getFilteredByTag("blog").
-      sort((a, b) => b.date.getTime() - a.date.getTime()).
-      reduce((result, post) => {
+    let m = collectionApi.getFilteredByTag("blog")
+      .sort((a, b) => b.date.getTime() - a.date.getTime())
+      .reduce((result, post) => {
         let year = post.date.getFullYear();
         let month = post.date.getMonth();
         if (result.has(year)) {
@@ -31,9 +31,9 @@ module.exports = {
     });
   },
   months: function(collectionApi) {
-    return collectionApi.getFilteredByTag("blog").
-      sort((a, b) => b.date.getTime() - a.date.getTime()).
-      reduce((result, post) => {
+    return collectionApi.getFilteredByTag("blog")
+      .sort((a, b) => b.date.getTime() - a.date.getTime())
+      .reduce((result, post) => {
         let year = post.date.getFullYear();
         let month = post.date.getMonth();
         let last = result[result.length - 1];
@@ -47,9 +47,9 @@ module.exports = {
   },
   tags: function(collectionApi) {
     const ignoreSet = new Set(["blog"]);
-    let m = collectionApi.getFilteredByTag("blog").
-      sort((a, b) => b.date.getTime() - a.date.getTime()).
-      reduce((result, post) => {
+    let m = collectionApi.getFilteredByTag("blog")
+      .sort((a, b) => b.date.getTime() - a.date.getTime())
+      .reduce((result, post) => {
         for (let tag of post.data.tags) {
           if (ignoreSet.has(tag)) {
             continue;
@@ -108,8 +108,8 @@ module.exports = {
     let lastCount, lastWeight;
     let result = [...countsByTag].map(e => {
       return {name: e[0], count: e[1]};
-    }).sort((a, b) => b.count - a.count).
-      map((e, index) => {
+    }).sort((a, b) => b.count - a.count)
+      .map((e, index) => {
         if (e.count == lastCount) {
           e["weight"] = lastWeight;
         } else {
