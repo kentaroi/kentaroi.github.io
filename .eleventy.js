@@ -1,3 +1,4 @@
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const sass = require("sass");
 const path = require("node:path");
 const collections = require("./src/_11ty/collections");
@@ -9,6 +10,9 @@ let graph = new DependencyGraph();
 let cacheKeys = new Map();
 
 module.exports = function(eleventyConfig) {
+  // Plugins
+  eleventyConfig.addPlugin(syntaxHighlight);
+
   // Config for old contents
   eleventyConfig.addPassthroughCopy("src/articles/images");
   eleventyConfig.addNunjucksFilter("safeToDateString", function(date) {
