@@ -43,6 +43,9 @@ module.exports = function(eleventyConfig) {
   }
 
 
+  // Config for CSS
+  eleventyConfig.addPassthroughCopy("src/css/*.css");
+
   // Config for SCSS
   eleventyConfig.addTemplateFormats("scss");
   eleventyConfig.addExtension("scss", {
