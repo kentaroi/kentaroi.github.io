@@ -29,6 +29,31 @@ module.exports = function(eleventyConfig) {
     console.log("INSPECT %s: %O", desc, obj);
   });
 
+
+  // Markdown
+  // Add class="main__link" attribute to links which do not have
+  // class attribute.
+  // This fix is applied for markdown files whose layouts are
+  // layout.njk or blog-layout.njk.
+  let md = require("markdown-it")({
+    html: true
+  }); // This is 11ty's default option
+  let defaultRenderer = md.renderer.rules.link_open || function(tokens, idx, options, env, self) {
+    return self.renderToken(tokens, idx, options);
+  }
+  md.renderer.rules.link_open = function(tokens, idx, options, env, self) {
+    if (!["layout.njk", "blog-layout.njk"].includes(env["layout"])) {
+      return defaultRenderer(tokens, idx, options, env, self);
+    }
+    let aIndex = tokens[idx].attrIndex("class");
+    if (aIndex < 0) {
+      tokens[idx].attrPush(["class", "main__link"]);
+    }
+    return defaultRenderer(tokens, idx, options, env, self);
+  }
+  eleventyConfig.setLibrary("md", md);
+
+
   // Custom collections, filters, and shortcodes
   for (let name in collections) {
     eleventyConfig.addCollection(name, collections[name]);
