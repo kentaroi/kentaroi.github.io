@@ -27,61 +27,83 @@ body {
   color: theme.$fg0;
 }
 
-body * + * {
-  margin-top: 1.5em;
-}
-
 a {
-  color: theme.$link;
   text-decoration: none;
-  &:hover {
-    // text-decoration: underline;
-    background-color: darken(theme.$link, 35%);
-  }
 }
 
 h1, h2 {
-  color: theme.$link;
   font-size: 1rem;
-  margin-top: 2em;
-  margin-bottom: 0;
 }
 
 h3, h4, h5, h6 {
   font-size: 1rem;
-  border-top: 1px solid theme.$link;
+  color: theme.$red;
 }
 
-.container {
-  width: 100%;
-  margin: 0;
+
+// Links
+.year__link {
+  color: theme.$neutral-yellow;
+  &:hover {
+    background-color: darken(theme.$neutral-yellow, 30%);
+  }
 }
+
+.month__link {
+  color: theme.$yellow;
+  &:hover {
+    background-color: darken(theme.$yellow, 45%);
+  }
+}
+
+.tag__link {
+  color: theme.$tag;
+  &:hover {
+    background-color: darken(theme.$tag, 30%);
+  }
+}
+
+
+// Date
+.date {
+  color: theme.$gray;
+}
+
 
 $main-width: 48em;
 $main-left-width: 18em;
 $nav-ratio: calc(50vw - $main-left-width);
 $footer-height: 7em;
 
-.page-header {
+.container {
+  width: 100%;
+  margin: 0;
+}
+
+.header {
   width: 100%;
   margin: 0;
   position: fixed;
   top: 0em;
   background-color: theme.$bg0;
-  h1, h2 {
+
+  &__site-title {
     color: theme.$title;
-    font-size: 1rem;
     font-size: 1.25rem;
     text-transform: uppercase;
-    margin: 1em;
-    margin-top: 0.7em;
-    margin-bottom: 0.7em;
-    margin-left: 0.8em;
+    margin: 0.7em 1em 0.7em 0.8em;
+  }
+
+  &__link {
+    color: theme.$menu;
+    &:hover {
+      background-color: darken(theme.$link, 35%);
+    }
   }
 }
 
 @media (min-width: $min-two-column-width) {
-  .page-header {
+  .header {
     position: fixed;
     top: 0em;
     left: 0;
@@ -89,59 +111,86 @@ $footer-height: 7em;
     width: $nav-ratio;
     padding-right: 1em;
     text-align: right;
-    h1, h2 {
+
+    &__site-title {
       margin-top: 1rem;
       margin-right: 0em;
     }
   }
 }
 
-main {
+.main {
   margin: 3em 1em 0em 1em;
   min-height: calc(100vh - $footer-height - 3em); // 3em is margin-top
-  h1:first-child, h2:first-child {
-    margin-top: 0;
+  &__link {
+    color: theme.$menu;
+    &:hover {
+      background-color: darken(theme.$link, 35%);
+    }
+  }
+
+  &__post {
+    margin-bottom: 20em;
+  }
+
+
+  &__years {
+    margin-top: 1em;
+    list-style-type: none;
+    padding-inline-start: 0;
+  }
+
+  &__year-item {
+    margin-top: 3em;
+    &:first-child {
+      margin-top: 1.5em;
+    }
+  }
+
+  &__months {
+    margin-top: 1em;
+    list-style-type: none;
+    padding-inline-start: 0;
+  }
+
+  &__month-item {
+    margin-top: 1em;
+  }
+
+  &__posts {
+    margin-top: 0.5em;
+    list-style-type: none;
+    padding-inline-start: 0;
+  }
+
+  &__post-item {
+    margin-top: 0.5em;
   }
 }
 
 @media (min-width: $min-two-column-width) {
-  main {
+  .main {
     margin: 0 0 0 $nav-ratio;
     width: $main-width;
     padding: 1em 1em 1.5em 0;
     min-height: calc(100vh - $footer-height);
+    &__title {
+      margin-top: 0;
+    }
   }
 }
 
-article {
-  margin-bottom: 35em;
-}
-
-time {
-  color: theme.$gray;
-  &.year {
-    a {
-      color: theme.$neutral-yellow;
-      &:hover {
-        background-color: darken(theme.$neutral-yellow, 30%);
-      }
-    }
-  }
-  &.month {
-    a {
-      color: theme.$yellow;
-      &:hover {
-        background-color: darken(theme.$yellow, 45%);
-      }
-    }
-  }
+.post__title {
+  margin-top: 0;
+  margin-bottom: 0.67em;
 }
 
 .post-meta {
   margin-top: 0;
   display: flex;
   list-style-type: none;
-  .tag-list {
+
+  &__tag-list {
     margin-left: auto;
   }
 }
@@ -153,38 +202,18 @@ time {
   text-align: right;
   align-items: right;
   list-style-type: none;
-  > li {
+
+  &__tag {
+    margin-top: 0;
     padding: 0 0.5em;
   }
-  > li + li {
-    margin-top: 0;
-  }
-}
-a.tag {
-  color: theme.$tag;
-  &:hover {
-    background-color: darken(theme.$tag, 30%);
-  }
 }
 
-.years {
-  margin-top: 1em;
-  list-style-type: none;
+
+.post-item__date {
+  margin-left: 1em;
 }
 
-.months {
-  margin-top: 1em;
-  list-style-type: none;
-}
-
-.posts {
-  margin-top: 0.5em;
-  list-style-type: none;
-  padding-inline-start: 0;
-  > li + li {
-    margin-top: 0.5em;
-  }
-}
 
 
 .menu {
@@ -193,42 +222,45 @@ a.tag {
   margin-top: 0;
   width: 100%;
   background-color: theme.$bg1;
-}
-.menu-toggle {
-  // Override user agent button styles
-  border: 0;
-  background-color: transparent;
 
-  position: absolute;
-  top: -1.2em;
-  right: 0.1em;
+  &__toggle {
+    // Override user agent button styles
+    border: 0;
+    background-color: transparent;
 
-  font-size: 2em;
-  width: 1em;
-  height: 1em;
-  line-height: 0.4;
-  text-indent: 5em;
-  white-space: nowrap;
-  overflow: hidden;
-
-  &::after {
     position: absolute;
-    top: 0.2em;
-    left: 0.2em;
-    display: block;
-    content: "\2261";
-    text-indent: 0;
-    color: theme.$link;
+    top: -1.2em;
+    right: 0.1em;
+
+    font-size: 2em;
+    width: 1em;
+    height: 1em;
+    line-height: 0.4;
+    text-indent: 5em;
+    white-space: nowrap;
+    overflow: hidden;
+
+    &::after {
+      position: absolute;
+      top: 0.2em;
+      left: 0.2em;
+      display: block;
+      content: "\2261";
+      text-indent: 0;
+      color: theme.$link;
+    }
   }
-}
-.menu-dropdown {
-  display: none;
-  margin-top: 0;
-}
-.menu.is-open .menu-dropdown {
-  display: block;
-  max-height: 70vh;
-  overflow-y: auto;
+
+  &__dropdown {
+    display: none;
+    margin-top: 0;
+  }
+
+  &__dropdown--open {
+    display: block;
+    max-height: 70vh;
+    overflow-y: auto;
+  }
 }
 
 @media (min-width: $min-two-column-width) {
@@ -240,40 +272,39 @@ a.tag {
     width: $nav-ratio;
     text-align: right;
     background-color: transparent;
-  }
-  .menu-toggle {
-    display: none;
-  }
-  .menu-dropdown {
-    display: block;
-    height: 100%;
-    overflow-y: auto;
+
+    &__toggle {
+      display: none;
+    }
+
+    &__dropdown {
+      display: block;
+      height: 100%;
+      overflow-y: auto;
+    }
   }
 }
+
+
 
 .site-nav {
   margin-left: 0;
   list-style-type: none;
-  a {
-    color: theme.$menu;
-  }
-}
-.site-nav > li {
-  text-transform: uppercase;
-}
-
-ul.site-nav, ul.related-nav {
   padding-inline-start: 1em;
-}
 
-.related-nav {
-  margin-left: 0;
-  list-style-type: none;
-  a {
-    color: theme.$menu;
+  &__item {
+    margin-top: 1.5em;
+    &:first-child {
+      margin-top: 0;
+    }
   }
-  > li {
-    margin-top: 1em;
+
+  &__link {
+    color: theme.$menu;
+    text-transform: uppercase;
+    &:hover {
+      background-color: darken(theme.$link, 35%);
+    }
   }
 }
 
@@ -281,10 +312,59 @@ ul.site-nav, ul.related-nav {
   .site-nav {
     margin-right: 1em;
   }
+}
+
+
+
+.related-nav {
+  margin-left: 0;
+  list-style-type: none;
+  padding-inline-start: 1em;
+
+  &__year {
+    margin-top: 1em;
+  }
+
+  &__months {
+    margin-top: 1em;
+    list-style-type: none;
+  }
+
+  &__month {
+    margin-top: 1em;
+  }
+
+  &__posts {
+    margin-top: 0.5em;
+    list-style-type: none;
+    padding-inline-start: 0;
+  }
+
+  &__post {
+    margin-top: 0.5em;
+    &:first-child {
+      margin-top: 0em;
+    }
+  }
+
+  &__link {
+    color: theme.$menu;
+    &:hover {
+      background-color: darken(theme.$link, 35%);
+    }
+  }
+}
+
+@media (min-width: $min-two-column-width) {
   .related-nav {
     margin-right: 1em;
     margin-bottom: $footer-height;
   }
+}
+
+
+
+@media (min-width: $min-two-column-width) {
   .tag-cloud {
     margin-right: 1em;
     margin-left: auto;
@@ -292,25 +372,34 @@ ul.site-nav, ul.related-nav {
   }
 }
 
-footer {
+
+
+.footer {
   text-align: center;
   margin-top: 0;
   height: 7em;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  p + p {
+
+  &__paragraph {
     margin-top: 0;
+    &:first-child {
+      margin-top: 1em;
+    }
+  }
+
+  &__link {
+    color: theme.$link;
+    &:hover {
+      background-color: darken(theme.$link, 35%);
+    }
   }
 }
 
 @media (min-width: $min-two-column-width) {
-  footer {
+  .footer {
     margin-left: $nav-ratio;
     text-align: left;
   }
-}
-
-a.date {
-  color: theme.$red;
 }

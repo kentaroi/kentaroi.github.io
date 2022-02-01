@@ -8,77 +8,77 @@
   </head>
   <body>
     <div class="container">
-      <header class="page-header">
+      <header class="header">
         {% if title %}
-          <h2><a href="/">{{ metadata.title }}</a></h2>
+          <h2 class="header__site-title"><a class="header__link" href="/">{{ metadata.title }}</a></h2>
         {% else %}
-          <h1><a href="/">{{ metadata.title }}</a></h1>
+          <h1 class="header__site-title"><a class="header__link" href="/">{{ metadata.title }}</a></h1>
         {% endif %}
       </header>
-      <main>
+      <main class="main">
         {% if title %}
-          <h1>{{ title }}</h1>
+          <h1 class="main__title"><a class="main__link" href="{{ url }}">{{ title }}</a></h1>
         {% endif %}
         {% block post_meta %}
         {% endblock %}
         {{ content | safe }}
       </main>
       <nav class="menu" id="main-menu">
-        <button class="menu-toggle" id="toggle-menu">
+        <button class="menu__toggle" id="menu__toggle">
           toggle menu
         </button>
-        <div class="menu-dropdown">
+        <div class="menu__dropdown" id="menu__dropdown">
           <ul class="site-nav">
-            <li><a href="/archive/">Archive</a></li>
-            <li><a href="/projects/">Projects</a></li>
-            <li><a href="/feed/">Feed</a></li>
-            <li><a href="/about/">About</a></li>
+            <li class="site-nav__item"><a class="site-nav__link" href="/archive/">Archive</a></li>
+            <li class="site-nav__item"><a class="site-nav__link" href="/projects/">Projects</a></li>
+            <li class="site-nav__item"><a class="site-nav__link" href="/feed/">Feed</a></li>
+            <li class="site-nav__item"><a class="site-nav__link" href="/about/">About</a></li>
           </ul>
           {% tagCloud collections.weightedTags %}
           {% block related_nav %}
             <!-- related navigation -->
           {% endblock %}
           <ul class="related-nav">
-            <li> <a href="">@autoclosureはすごくいい</a></li>
-            <li><a href="">@_disfavoredOverloadについて</a></li>
-            <li><a href="">PP.swiftを作った話</a></li>
-            <li><a href="">Flutterは思ったより重要なのではないか</a></li>
-            <li><a href="">SwiftUIの正しさ</a></li>
-            <li><a href="">Swiftのつらさ</a></li>
-            <li><a href="">絵に描いた餅のベーシックインカム（BI）</a></li>
-            <li><a href="">DWARFフォーマット</a></li>
-            <li><a href="">Swiftのスタックトレース（callStackSymbols）を読みやすくする話</a></li>
-            <li><a href="">Swiftのスタックトレースの行番号を取得する話</a></li>
-            <li><a href="">Ember Octaneとは</a></li>
-            <li><a href="">このブログは11ty(Eleventy)でできている</a></li>
-            <li><a href="">@kentaroi/eleventy-plugin-sassを作った話</a></li>
-            <li><a href="">11ty(Eleventy)のプラグインの作り方</a></li>
-            <li><a href="">失われた30年の理由のひとつは終身雇用ではないか？</a></li>
-            <li><a href="">クソのようなSNSを断つ</a></li>
-            <li><a href="">佐々木俊尚という人は少し面白い</a></li>
-            <li><a href="">失われたWeb2.0</a></li>
-            <li><a href="">Bottom aligned UITableView</a></li>
-            <li><a href="">Blockchainはやばいぐらい重要</a></li>
-            <li><a href="">Web3 (Blockchain)をできるだけちゃんと説明する</a></li>
-            <li><a href="">ネガティブな大人の話は聞かない方がいい</a></li>
+            <li class="related-nav__post"><a class="related-nav__link" href="">@autoclosureはすごくいい</a></li>
+            <li class="related-nav__post"><a class="related-nav__link" href="">@_disfavoredOverloadについて</a></li>
+            <li class="related-nav__post"><a class="related-nav__link" href="">PP.swiftを作った話</a></li>
+            <li class="related-nav__post"><a class="related-nav__link" href="">Flutterは思ったより重要なのではないか</a></li>
+            <li class="related-nav__post"><a class="related-nav__link" href="">SwiftUIの正しさ</a></li>
+            <li class="related-nav__post"><a class="related-nav__link" href="">Swiftのつらさ</a></li>
+            <li class="related-nav__post"><a class="related-nav__link" href="">絵に描いた餅のベーシックインカム（BI）</a></li>
+            <li class="related-nav__post"><a class="related-nav__link" href="">DWARFフォーマット</a></li>
+            <li class="related-nav__post"><a class="related-nav__link" href="">Swiftのスタックトレース（callStackSymbols）を読みやすくする話</a></li>
+            <li class="related-nav__post"><a class="related-nav__link" href="">Swiftのスタックトレースの行番号を取得する話</a></li>
+            <li class="related-nav__post"><a class="related-nav__link" href="">Ember Octaneとは</a></li>
+            <li class="related-nav__post"><a class="related-nav__link" href="">このブログは11ty(Eleventy)でできている</a></li>
+            <li class="related-nav__post"><a class="related-nav__link" href="">@kentaroi/eleventy-plugin-sassを作った話</a></li>
+            <li class="related-nav__post"><a class="related-nav__link" href="">11ty(Eleventy)のプラグインの作り方</a></li>
+            <li class="related-nav__post"><a class="related-nav__link" href="">失われた30年の理由のひとつは終身雇用ではないか？</a></li>
+            <li class="related-nav__post"><a class="related-nav__link" href="">クソのようなSNSを断つ</a></li>
+            <li class="related-nav__post"><a class="related-nav__link" href="">佐々木俊尚という人は少し面白い</a></li>
+            <li class="related-nav__post"><a class="related-nav__link" href="">失われたWeb2.0</a></li>
+            <li class="related-nav__post"><a class="related-nav__link" href="">Bottom aligned UITableView</a></li>
+            <li class="related-nav__post"><a class="related-nav__link" href="">Blockchainはやばいぐらい重要</a></li>
+            <li class="related-nav__post"><a class="related-nav__link" href="">Web3 (Blockchain)をできるだけちゃんと説明する</a></li>
+            <li class="related-nav__post"><a class="related-nav__link" href="">ネガティブな大人の話は聞かない方がいい</a></li>
           </ul>
         </div>
       </nav>
-      <footer>
-        <p>
-        Built with <a href="https://www.11ty.dev/">Eleventy</a>. Theme colors are taken from <a href="https://github.com/morhetz/gruvbox">gruvbox</a> by <a href="https://github.com/morhetz">Pavel Pertsev</a>.
+      <footer class="footer">
+        <p class="footer__paragraph">
+        Built with <a class="footer__link" href="https://www.11ty.dev/">Eleventy</a>. Theme colors are taken from <a class="footer__link" href="https://github.com/morhetz/gruvbox">gruvbox</a> by <a class="footer__link" href="https://github.com/morhetz">Pavel Pertsev</a>.
         </p>
-        <p>
+        <p class="footer__paragraph">
           Copyright © 2011–2022 Kentaro Imai
         </p>
       </footer>
     </div>
     <script defer>
-      var button = document.getElementById('toggle-menu');
-      button.addEventListener('click', function(event) {
+      var button = document.getElementById("menu__toggle");
+      button.addEventListener("click", function(event) {
         event.preventDefault();
-        var menu = document.getElementById('main-menu');
-        menu.classList.toggle('is-open');
+        var menu = document.getElementById("menu__dropdown");
+        menu.classList.toggle("menu__dropdown--open");
       });
     </script>
   </body>

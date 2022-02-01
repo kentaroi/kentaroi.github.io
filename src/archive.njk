@@ -2,20 +2,20 @@
 title: Archive
 layout: layout.njk
 ---
-<ul class="years">
+<ul class="main__years">
   {%- for yearlyItem in collections.years -%}
     {% set year = yearlyItem.year %}
     {% set yearlyPosts = yearlyItem.monthlyPosts %}
-    <li>
-      <ul class="months">
+    <li class="main__year-item">
+      <ul class="main__months">
         {%- for monthlyItem in yearlyPosts -%}
           {%- set month = monthlyItem.month -%}
           {%- set monthlyPosts = monthlyItem.posts -%}
-          <li>
+          <li class="main__month-item">
             {% timeTagForMonth year, month %}
-            <ul class="posts">
+            <ul class="main__posts">
               {%- for post in monthlyPosts -%}
-                <li><a href="{{ post.url }}">{{ post.data.title }}</a> {% timeTagForDate post.date, 'short' %}</li>
+                <li class="main__post-item">{% linkToPost post %} {% timeTagForDate post.date, "short", "post-item__date" %}</li>
               {%- endfor -%}
             </ul>
           </li>

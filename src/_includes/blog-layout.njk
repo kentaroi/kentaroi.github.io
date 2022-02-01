@@ -1,9 +1,9 @@
-{% extends 'layout.njk' %}
+{% extends "layout.njk" %}
 
 {% block post_meta %}
-  <div class='post-meta'>
-    {% timeTagForDate date %}
-    {% tagList tags | except("blog") %}
+  <div class="post-meta">
+    {% timeTagForDate date, "long", "post-meta__date" %}
+    {% tagList tags | except("blog"), "post-meta__tag-list" %}
   </div>
 {% endblock %}
 
@@ -12,16 +12,16 @@
     {%- for yearlyItem in collections.years -%}
       {% set year = yearlyItem.year %}
       {% if page.date.getFullYear() == year %}
-        <li>{% timeTagForYear year %}
-          <ul class="months">
+        <li class="related-nav__year">{% timeTagForYear year %}
+          <ul class="related-nav__months">
         {% set yearlyPosts = yearlyItem.monthlyPosts %}
         {%- for monthlyItem in yearlyPosts -%}
           {%- set month = monthlyItem.month -%}
           {%- set monthlyPosts = monthlyItem.posts -%}
-          <li>{% timeTagForMonth year, month, false %}
-          <ul class="posts">
+          <li class="related-nav__month">{% timeTagForMonth year, month, false %}
+          <ul class="related-nav__posts">
           {%- for post in monthlyPosts -%}
-            <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+            <li class="related-nav__post"><a class="related-nav__link" href="{{ post.url }}">{{ post.data.title }}</a></li>
           {%- endfor -%}
           </ul>
           </li>
@@ -29,7 +29,7 @@
           </ul>
         </li>
       {% else %}
-        <li>{% timeTagForYear year %}</li>
+        <li class="related-nav__year">{% timeTagForYear year %}</li>
       {% endif %}
     {%- endfor -%}
   </ul>
