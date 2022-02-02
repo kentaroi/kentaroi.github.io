@@ -67,25 +67,6 @@ module.exports = {
     });
   },
   countsByTag: function(collectionApi) {
-    let m = new Map();
-    m.set("Web3", 5);
-    m.set("blockchain", 10);
-    m.set("Swift", 20);
-    m.set("UIKit", 13);
-    m.set("DWARF", 5);
-    m.set("Flutter", 15);
-    m.set("Dart", 6);
-    m.set("JavaScript", 3);
-    m.set("11ty", 4);
-    m.set("Politics", 1);
-    m.set("Android", 2);
-    m.set("Rust", 2);
-    m.set("Ruby", 1);
-    m.set("Elixir", 2);
-    m.set("Ember.js", 13);
-    m.set("日常", 3);
-    m.set("個人アプリ開発", 4);
-    return m;
     const ignoreSet = new Set(["all", "blog", "years", "months"]);
     let result = new Map();
     for (let post of collectionApi.getFilteredByTag("blog")) {
