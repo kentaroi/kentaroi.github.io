@@ -1,4 +1,5 @@
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const pluginRss = require("@11ty/eleventy-plugin-rss");
 const sass = require("sass");
 const path = require("node:path");
 const collections = require("./src/_11ty/collections");
@@ -12,6 +13,7 @@ let cacheKeys = new Map();
 module.exports = function(eleventyConfig) {
   // Plugins
   eleventyConfig.addPlugin(syntaxHighlight);
+  eleventyConfig.addPlugin(pluginRss);
 
   // Config for old contents
   eleventyConfig.addPassthroughCopy("src/articles/images");
