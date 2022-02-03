@@ -301,6 +301,7 @@ $footer-height: 7em;
   }
 
   &__link {
+    display: block;
     color: theme.$menu;
     text-transform: uppercase;
     &:hover {
@@ -312,6 +313,10 @@ $footer-height: 7em;
 @media (min-width: $min-two-column-width) {
   .site-nav {
     margin-right: $gutter;
+
+    &__link {
+      display: inline;
+    }
   }
 }
 
