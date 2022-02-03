@@ -82,17 +82,22 @@ $footer-height: 7em;
 }
 
 .header {
-  width: 100%;
-  margin: 0;
   position: fixed;
   top: 0em;
+  width: 100%;
+  height: 3em;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  flex-flow: center;
   background-color: theme.$bg0;
 
   &__site-title {
+    display: block;
+    margin: auto 0 auto 0.8em;
     color: theme.$title;
     font-size: 1.25rem;
     text-transform: uppercase;
-    margin: 0.7em 1em 0.7em 0.8em;
   }
 
   &__link {
@@ -110,12 +115,12 @@ $footer-height: 7em;
     left: 0;
     margin: 0 auto;
     width: $nav-ratio;
+    height: auto;
     padding-right: $gutter;
     text-align: right;
 
     &__site-title {
-      margin-top: 1rem;
-      margin-right: 0em;
+      margin: 0.8em 0 0.8em auto;
     }
   }
 }
