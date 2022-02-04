@@ -45,7 +45,7 @@ module.exports = function(eleventyConfig) {
   // layout.njk or blog-layout.njk.
   let defaultRenderer = md.renderer.rules.link_open || function(tokens, idx, options, env, self) {
     return self.renderToken(tokens, idx, options);
-  }
+  };
   md.renderer.rules.link_open = function(tokens, idx, options, env, self) {
     if (!["layout.njk", "blog-layout.njk"].includes(env["layout"])) {
       return defaultRenderer(tokens, idx, options, env, self);
@@ -55,7 +55,21 @@ module.exports = function(eleventyConfig) {
       tokens[idx].attrPush(["class", "main__link"]);
     }
     return defaultRenderer(tokens, idx, options, env, self);
-  }
+  };
+
+  // Add class="main__inline-code" attribute to code tag which do not have
+  // class attribute.
+  let defaultCodeInline = md.renderer.rules.code_inline;
+  md.renderer.rules.code_inline = function(tokens, idx, options, env, self) {
+    if (!["layout.njk", "blog-layout.njk"].includes(env["layout"])) {
+      return defaultCodeInline(tokens, idx, options, env, self);
+    }
+    let aIndex = tokens[idx].attrIndex("class");
+    if (aIndex < 0) {
+      tokens[idx].attrPush(["class", "main__inline-code"]);
+    }
+    return defaultCodeInline(tokens, idx, options, env, self);
+  };
   eleventyConfig.setLibrary("md", md);
 
 

@@ -172,6 +172,14 @@ $footer-height: 7em;
   &__post-item {
     margin-top: 0.5em;
   }
+
+  &__inline-code {
+    padding: 0 0.4em;
+    border-radius: 0.2em;
+    font-family: Consolas, Monaco, "Andale Mono", monospace;
+    color: theme.$orange;
+    background-color: theme.$dark0-hard;
+  }
 }
 
 @media (min-width: $min-two-column-width) {
