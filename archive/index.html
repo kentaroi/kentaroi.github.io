@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/style.css" />
+    <link href="/css/prism-gruvbox-dark.css" rel="stylesheet">
+    <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Kentaro Imai" />
+    <title>Archive | Kentaro Imai</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        
+          <h2 class="header__site-title"><a class="header__link" href="/">Kentaro Imai</a></h2>
+        
+      </header>
+      <main class="main">
+        
+          <h1 class="main__title"><a class="main__link" href="">Archive</a></h1>
+        
+        
+        
+        <ul class="main__years"></ul>
+
+      </main>
+      <nav class="menu" id="main-menu">
+        <button class="menu__toggle" id="menu__toggle">
+          toggle menu
+        </button>
+        <div class="menu__dropdown" id="menu__dropdown">
+          <ul class="site-nav">
+            <li class="site-nav__item"><a class="site-nav__link" href="/archive/">Archive</a></li>
+            <li class="site-nav__item"><a class="site-nav__link" href="/projects/">Projects</a></li>
+            <li class="site-nav__item"><a class="site-nav__link" href="/feed/">Feed</a></li>
+            <li class="site-nav__item"><a class="site-nav__link" href="/about/">About</a></li>
+          </ul>
+          <ul class="tag-cloud"></ul>
+          
+            <!-- related navigation -->
+          
+        </div>
+      </nav>
+      <footer class="footer">
+        <p class="footer__paragraph">
+        Built with <a class="footer__link" href="https://www.11ty.dev/">Eleventy</a>. Theme colors are taken from <a class="footer__link" href="https://github.com/morhetz/gruvbox">gruvbox</a> by <a class="footer__link" href="https://github.com/morhetz">Pavel Pertsev</a>.
+        </p>
+        <p class="footer__paragraph">
+          Copyright © 2011–2022 Kentaro Imai
+        </p>
+      </footer>
+    </div>
+    <script defer>
+      var button = document.getElementById("menu__toggle");
+      button.addEventListener("click", function(event) {
+        event.preventDefault();
+        var menu = document.getElementById("menu__dropdown");
+        menu.classList.toggle("menu__dropdown--open");
+      });
+    </script>
+  </body>
+</html>

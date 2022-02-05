@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Kentaro Imai</title>
+  <link href="http://kentaroimai.com/feed.xml" rel="self"/>
+  <link href="http://kentaroimai.com/"/>
+  <updated>2022-02-05T06:17:23Z</updated>
+  <id>http://kentaroimai.com/</id>
+  <author>
+    <name>Kentaro Imai</name>
+    <email>kentaroi@gmail.com</email>
+  </author>
+</feed>
