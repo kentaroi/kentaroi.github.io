@@ -20,4 +20,5 @@ jobs:
         with:
           publish_dir: dist 
           publish_branch: gh-pages
+          cname: kentaroimai.com
           github_token: ${{ secrets.GITHUB_TOKEN }}
