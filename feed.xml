@@ -3,10 +3,28 @@
   <title>Kentaro Imai</title>
   <link href="http://kentaroimai.com/feed.xml" rel="self"/>
   <link href="http://kentaroimai.com/"/>
-  <updated>2022-02-05T06:17:23Z</updated>
+  <updated>2023-02-27T15:00:00Z</updated>
   <id>http://kentaroimai.com/</id>
   <author>
     <name>Kentaro Imai</name>
     <email>kentaroi@gmail.com</email>
   </author>
+  
+  <entry>
+    <title>新しいプロジェクト</title>
+    <link href="http://kentaroimai.com/2023/02/new-project/"/>
+    <updated>2023-02-27T15:00:00Z</updated>
+    <id>http://kentaroimai.com/2023/02/new-project/</id>
+    <content type="html">&lt;p&gt;ここ数年まともなアウトプットができていない。んだけど、今日はそれについて書くのはやめておく。&lt;/p&gt;
+&lt;p&gt;これからのことを書く。&lt;/p&gt;
+&lt;p&gt;新しいアプリを作ろうと思っている。何を作るのか迷ったが、ノートアプリを作ろうと思う。&lt;/p&gt;
+&lt;p&gt;なぜノートアプリみたいなものを作るのか？その辺のことを書き始めると長くなりそうなので、これについても今日はやめておく。とにかく僕なりにいろいろと考えた末にそういうことになった。&lt;/p&gt;
+&lt;p&gt;ただ、ひとつだけ書いておくと、既存のノートアプリのクローンを作るつもりはないし、似たようなものも作るつもりはない。僕自身がしっくりくるノートアプリを見つけられないので、自作する、そういう話だ。&lt;/p&gt;
+&lt;p&gt;で、僕としてはノートアプリはスマホからもPCからも使いたい。マルチプラットフォーム対応していてほしい。だから、そうするつもりでいる。ただ、まずはiPhone版とAndroid版を先に開発するつもりでいる。&lt;/p&gt;
+&lt;p&gt;何を使って作るか迷ったが、Flutterを使おうと思っている。今まで使ったことはないし、Dartも年が明けてから勉強を始めたばかりだが、何とかなるような気がしている。なかなか使いやすそうな言語だと（今のところは）感じている。&lt;/p&gt;
+&lt;p&gt;実は、去年まで数年間ネイティブでアプリを書くことしか考えていなかった。Kotlinはあまりさわっていないが、Swiftのコードは書いていた。が、結局ろくなアウトプットをしないまま、Swiftをほぼ書かなくなりそうだ。&lt;/p&gt;
+&lt;p&gt;いろいろと技術的に足りていないことがあるけれど、勉強しながら作ろうと思う。&lt;/p&gt;
+&lt;p&gt;これから開発日記のようなものを書くつもりでいる。読みたいと思う人がいるのかはわからないけれど。&lt;/p&gt;
+</content>
+  </entry>
 </feed>

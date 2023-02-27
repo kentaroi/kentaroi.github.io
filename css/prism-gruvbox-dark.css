@@ -123,7 +123,7 @@ pre[class*="language-"] {
 }
 
 .token.regex {
-	background: #b8bb26; /* green2 */
+	color: #8ec07c; /* aqua2 */
 }
 
 .token.bold {
