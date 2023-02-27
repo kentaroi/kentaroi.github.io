@@ -3,7 +3,7 @@ pagination:
   data: collections.tags
   size: 1
   alias: tag
-permalink: "{{ tag.name | tagNameToUrl }}index.html"
+permalink: "{{ tag.name | tagNameToFilePath }}"
 eleventyComputed:
   title: "Tag: {{ tag.name }}"
 layout: 'layout.njk'

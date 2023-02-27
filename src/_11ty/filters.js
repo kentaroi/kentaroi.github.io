@@ -12,6 +12,9 @@ module.exports = {
   tagNameToUrl: function(name) {
     return encodeURI("/tags/" + name + "/");
   },
+  tagNameToFilePath: function(name) {
+    return `/tags/${ name }/index.html`;
+  },
   except: function(list, ...exception) {
     return list.filter(e => !exception.includes(e));
   },
