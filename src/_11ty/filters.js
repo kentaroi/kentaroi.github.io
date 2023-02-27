@@ -14,5 +14,9 @@ module.exports = {
   },
   except: function(list, ...exception) {
     return list.filter(e => !exception.includes(e));
+  },
+  inspect: function(arg) {
+    console.log("%o", arg);
+    debugger;
   }
 };
