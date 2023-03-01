@@ -210,7 +210,6 @@ $footer-height: 7em;
 
 .post-meta {
   margin-top: 0;
-  display: flex;
   list-style-type: none;
 
   &__tag-list {
@@ -218,9 +217,17 @@ $footer-height: 7em;
   }
 }
 
+@media(min-width: $min-two-column-width) {
+  .post-meta {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
 .tag-list {
   margin-top: 0;
   display: flex;
+  align-items: baseline;
   justify-content: flex-end;
   text-align: right;
   align-items: right;
