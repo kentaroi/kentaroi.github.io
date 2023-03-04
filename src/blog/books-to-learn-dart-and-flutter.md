@@ -15,6 +15,7 @@ tags: ['blog', 'Dart', 'Flutter', '技術書', '開発日記']
 
 以下の内容は端的に言えば「つらい」ということで、読む価値はありません。ここまで読んでくださってありがとうございました。FlutterやDartの本を探している人は読むと少しは参考になることもあるかもしれません。
 
+### さらに勉強を進めた結果、特にFlutterの本に関して下記の評価を改めなければならないと感じつつある。もう少しFlutterについて理解を深めた後に改めて記事を書き直したいが、基本的には*Flutter Apprentice*をおすすめしたい。(2023年3月4日）
 
 購入した書籍[^1]：
 1. [Jonathan Sande, *Dart Apprentice: Fundamentals*, (Kodeco Inc., 2022)](https://amzn.asia/d/g3r1gVp)
