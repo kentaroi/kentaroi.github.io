@@ -2,6 +2,7 @@
 title: DartとFlutterを学ぶための技術書について
 date: 2023-03-01T18:30:00+09:00
 tags: ['blog', 'Dart', 'Flutter', '技術書', '開発日記']
+redirect_from: /2023/03/books-to-learn-dart-and-flutter
 ---
 [ノートアプリを開発することに決めた](/2023/02/new-project/)が、まだ開発を始めることができていない。
 
