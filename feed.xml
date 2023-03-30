@@ -3,7 +3,7 @@
   <title>Kentaro Imai</title>
   <link href="http://kentaroimai.com/feed.xml" rel="self"/>
   <link href="http://kentaroimai.com/"/>
-  <updated>2023-03-01T09:30:00Z</updated>
+  <updated>2023-03-30T14:00:00Z</updated>
   <id>http://kentaroimai.com/</id>
   <author>
     <name>Kentaro Imai</name>
@@ -12,9 +12,9 @@
   
   <entry>
     <title>新しいプロジェクト</title>
-    <link href="http://kentaroimai.com/2023/02/new-project/"/>
+    <link href="http://kentaroimai.com/2023/02/%E6%96%B0%E3%81%97%E3%81%84%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88/"/>
     <updated>2023-02-27T17:00:00Z</updated>
-    <id>http://kentaroimai.com/2023/02/new-project/</id>
+    <id>http://kentaroimai.com/2023/02/%E6%96%B0%E3%81%97%E3%81%84%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88/</id>
     <content type="html">&lt;p&gt;ここ数年まともなアウトプットができていない。んだけど、今日はそれについて書くのはやめておく。&lt;/p&gt;
 &lt;p&gt;これからのことを書く。&lt;/p&gt;
 &lt;p&gt;新しいアプリを作ろうと思っている。何を作るのか迷ったが、ノートアプリを作ろうと思う。&lt;/p&gt;
@@ -31,9 +31,9 @@
   
   <entry>
     <title>DartとFlutterを学ぶための技術書について</title>
-    <link href="http://kentaroimai.com/2023/03/books-to-learn-dart-and-flutter/"/>
+    <link href="http://kentaroimai.com/2023/03/Dart%E3%81%A8Flutter%E3%82%92%E5%AD%A6%E3%81%B6%E3%81%9F%E3%82%81%E3%81%AE%E6%8A%80%E8%A1%93%E6%9B%B8%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/"/>
     <updated>2023-03-01T09:30:00Z</updated>
-    <id>http://kentaroimai.com/2023/03/books-to-learn-dart-and-flutter/</id>
+    <id>http://kentaroimai.com/2023/03/Dart%E3%81%A8Flutter%E3%82%92%E5%AD%A6%E3%81%B6%E3%81%9F%E3%82%81%E3%81%AE%E6%8A%80%E8%A1%93%E6%9B%B8%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/</id>
     <content type="html">&lt;p&gt;&lt;a href=&quot;http://kentaroimai.com/2023/02/new-project/&quot; class=&quot;main__link&quot;&gt;ノートアプリを開発することに決めた&lt;/a&gt;が、まだ開発を始めることができていない。&lt;/p&gt;
 &lt;p&gt;というのも、アプリを開発するのに使う予定のFlutterを勉強中だからで、これがiOSだけのアプリで良いのなら既にSwiftで書き始めているところだが、今回はそういう訳にはいかない。マルチプラットフォームでアプリを出すためには、そしてそれを個人で短期間でやるとなればFlutterをどうしても使いたいのだ。&lt;/p&gt;
 &lt;p&gt;ところで僕は、プログラミング関係であるか否かを問わず、何でも本で勉強するのが好きで、いつも（電子ブックではなく）紙の書籍を買ってマーカーを引きながら、たまにメモを書き込みながら読んで勉強している。今回もそのつもりでDartやFlutterの本を買い集めたのだが、正直あまりうまくいっていない。&lt;/p&gt;
@@ -41,7 +41,8 @@
 &lt;p&gt;なので今日のブログは要は泣き言である。2回目にして泣き言とは情けない。&lt;/p&gt;
 &lt;p&gt;以下の内容は端的に言えば「つらい」ということで、読む価値はありません。ここまで読んでくださってありがとうございました。FlutterやDartの本を探している人は読むと少しは参考になることもあるかもしれません。&lt;/p&gt;
 &lt;h3&gt;さらに勉強を進めた結果、特にFlutterの本に関して下記の評価を改めなければならないと感じつつある。もう少しFlutterについて理解を深めた後に改めて記事を書き直したいが、基本的には&lt;em&gt;Flutter Apprentice&lt;/em&gt;をおすすめしたい。(2023年3月4日）&lt;/h3&gt;
-&lt;p&gt;購入した書籍&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;http://kentaroimai.com/2023/03/books-to-learn-dart-and-flutter/#fn1&quot; id=&quot;fnref1&quot;&gt;[1]&lt;/a&gt;&lt;/sup&gt;：&lt;/p&gt;
+&lt;h3&gt;書いた（2023年3月30日）→ &lt;a href=&quot;http://kentaroimai.com/2023/03/Dart%E3%81%A8Flutter%E3%82%92%E5%AD%A6%E3%81%B6%E3%81%9F%E3%82%81%E3%81%AE%E6%8A%80%E8%A1%93%E6%9B%B8%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%EF%BC%92/&quot; class=&quot;main__link&quot;&gt;DartとFlutterを学ぶための技術書について２&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;購入した書籍&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;http://kentaroimai.com/2023/03/Dart%E3%81%A8Flutter%E3%82%92%E5%AD%A6%E3%81%B6%E3%81%9F%E3%82%81%E3%81%AE%E6%8A%80%E8%A1%93%E6%9B%B8%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/#fn1&quot; id=&quot;fnref1&quot;&gt;[1]&lt;/a&gt;&lt;/sup&gt;：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;a href=&quot;https://amzn.asia/d/g3r1gVp&quot; class=&quot;main__link&quot;&gt;Jonathan Sande, &lt;em&gt;Dart Apprentice: Fundamentals&lt;/em&gt;, (Kodeco Inc., 2022)&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://amzn.asia/d/h0XmfPW&quot; class=&quot;main__link&quot;&gt;Jonathan Sande, &lt;em&gt;Dart Apprentice: Beyond the Basics&lt;/em&gt;, (Kodeco Inc., 2022)&lt;/a&gt;&lt;/li&gt;
@@ -65,10 +66,33 @@
 &lt;hr class=&quot;footnotes-sep&quot; /&gt;
 &lt;section class=&quot;footnotes&quot;&gt;
 &lt;ol class=&quot;footnotes-list&quot;&gt;
-&lt;li id=&quot;fn1&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;Amazonへのリンクにしたが、これは今のところAmazonにレビューが一番集まっていることが多いからで、洋書を買うのに必ずしもAmazonをおすすめしない。ただし、Kodecoの本に関してはAmazonによるオンデマンド印刷なので、Amazonで買うのが一番きれいに届くと思う。 &lt;a href=&quot;http://kentaroimai.com/2023/03/books-to-learn-dart-and-flutter/#fnref1&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&quot;fn1&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;Amazonへのリンクにしたが、これは今のところAmazonにレビューが一番集まっていることが多いからで、洋書を買うのに必ずしもAmazonをおすすめしない。ただし、Kodecoの本に関してはAmazonによるオンデマンド印刷なので、Amazonで買うのが一番きれいに届くと思う。 &lt;a href=&quot;http://kentaroimai.com/2023/03/Dart%E3%81%A8Flutter%E3%82%92%E5%AD%A6%E3%81%B6%E3%81%9F%E3%82%81%E3%81%AE%E6%8A%80%E8%A1%93%E6%9B%B8%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/#fnref1&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>DartとFlutterを学ぶための技術書について２</title>
+    <link href="http://kentaroimai.com/2023/03/Dart%E3%81%A8Flutter%E3%82%92%E5%AD%A6%E3%81%B6%E3%81%9F%E3%82%81%E3%81%AE%E6%8A%80%E8%A1%93%E6%9B%B8%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%EF%BC%92/"/>
+    <updated>2023-03-30T14:00:00Z</updated>
+    <id>http://kentaroimai.com/2023/03/Dart%E3%81%A8Flutter%E3%82%92%E5%AD%A6%E3%81%B6%E3%81%9F%E3%82%81%E3%81%AE%E6%8A%80%E8%A1%93%E6%9B%B8%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%EF%BC%92/</id>
+    <content type="html">&lt;p&gt;１ヶ月ブログを休んでしまった。&lt;/p&gt;
+&lt;p&gt;何か意味のあることを書こうとした結果、書けなくなった。書いているうちに「これを書いて意味があるのか？」とか考え出すともうだめである。&lt;/p&gt;
+&lt;p&gt;だから、これからは意味のあることを書かないことにした。&lt;/p&gt;
+&lt;p&gt;前回、DartとFlutterの技術書を列挙したが、読んでみた結果、以下の３冊が良かった。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://amzn.asia/d/g3r1gVp&quot; class=&quot;main__link&quot;&gt;Jonathan Sande, &lt;em&gt;Dart Apprentice: Fundamentals&lt;/em&gt;, (Kodeco Inc., 2022)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://amzn.asia/d/h0XmfPW&quot; class=&quot;main__link&quot;&gt;Jonathan Sande, &lt;em&gt;Dart Apprentice: Beyond the Basics&lt;/em&gt;, (Kodeco Inc., 2022)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://amzn.asia/d/dBNcqpW&quot; class=&quot;main__link&quot;&gt;Michael Katz, Kevin David Moore &amp;amp; Vincent Ngo, &lt;em&gt;Flutter Apprentice&lt;/em&gt; (Razeware LLC., 2022)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Flutter Apprenticeは、最後のプラットフォーム別の部分はまだ読んでいないが、だいたい良かった。&lt;/p&gt;
+&lt;p&gt;ただ、問題は、画面遷移には&lt;code class=&quot;main__inline-code&quot;&gt;go_router&lt;/code&gt;、状態管理には&lt;code class=&quot;main__inline-code&quot;&gt;provider&lt;/code&gt;、DBライブラリは&lt;code class=&quot;main__inline-code&quot;&gt;moor&lt;/code&gt;を使っている点で、&lt;code class=&quot;main__inline-code&quot;&gt;go_router&lt;/code&gt;はFlutterに取り込まれたパッケージなのでこれを使っているのは自然なのだが、単純な画面遷移は問題なくても、ネストした複雑なものを作ろうとするとまだ機能が足りていないというようなことをRedditで読んだので、実際の開発に使っていいものか迷っている。ノートアプリの開発には&lt;code class=&quot;main__inline-code&quot;&gt;Beamer&lt;/code&gt;か&lt;code class=&quot;main__inline-code&quot;&gt;AutoRoute&lt;/code&gt;を選ぶかもしれない。&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;main__inline-code&quot;&gt;provider&lt;/code&gt;は&lt;code class=&quot;main__inline-code&quot;&gt;Riverpod&lt;/code&gt;という改善されたものが出ているので、そっちを使いたい。他にも多数状態管理のためのライブラリがあるらしく悩ましいが、とりあえず&lt;code class=&quot;main__inline-code&quot;&gt;Riverpod&lt;/code&gt;を使ってみようと思う。&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;main__inline-code&quot;&gt;moor&lt;/code&gt;はAndroidアプリ開発に使う&lt;code class=&quot;main__inline-code&quot;&gt;Room&lt;/code&gt;のFlutter版という位置付けらしく、&lt;code class=&quot;main__inline-code&quot;&gt;Room&lt;/code&gt;を逆さにして&lt;code class=&quot;main__inline-code&quot;&gt;moor&lt;/code&gt;らしい。あと、すでにパッケージ名が変わっていて、今は後継版の&lt;code class=&quot;main__inline-code&quot;&gt;drift&lt;/code&gt;を使うことが推奨されている。&lt;/p&gt;
+&lt;p&gt;そういう訳で、アプリ開発で骨組みとなるようなところの解説が、微妙に古いライブラリや使わなさそうなライブラリをベースに行われていて、おまけにそれぞれの解説も非常に薄いというか、さらっと書かれてるので、この本をもってFlutterをマスターとは到底言えないというのが、読んでみての正直な感想である。ただまぁ、Flutterのようなまだまだ変更の多いフレームワークの解説書が存在するだけでありがたい訳だし、とりあえずお手本に従ってアプリを組んで感覚をつかむという点では非常に良い本だったと思う。&lt;/p&gt;
+&lt;p&gt;本を読んだ後何をしていたかということはまた別の記事で。&lt;/p&gt;
 </content>
   </entry>
 </feed>

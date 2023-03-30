@@ -22,7 +22,32 @@
         
         
         <article class="main__post post">
-    <h2 class="post__title"><a class="main__link" href="/2023/03/books-to-learn-dart-and-flutter/">DartとFlutterを学ぶための技術書について</a></h2>
+    <h2 class="post__title"><a class="main__link" href="/2023/03/DartとFlutterを学ぶための技術書について２/">DartとFlutterを学ぶための技術書について２</a></h2>
+    <div class="post-meta">
+      <time class="post-meta__date date" datetime="2023-03-30T14:00:00.000Z">Thursday, 30 March 2023</time>
+      <ul class="post-meta__tag-list tag-list"><li class="tag-list__tag tag"><a href="/tags/Dart/" class="tag__link">Dart</a></li>
+<li class="tag-list__tag tag"><a href="/tags/Flutter/" class="tag__link">Flutter</a></li>
+<li class="tag-list__tag tag"><a href="/tags/%E6%8A%80%E8%A1%93%E6%9B%B8/" class="tag__link">技術書</a></li>
+<li class="tag-list__tag tag"><a href="/tags/%E9%96%8B%E7%99%BA%E6%97%A5%E8%A8%98/" class="tag__link">開発日記</a></li></ul>
+    </div>
+    <p>１ヶ月ブログを休んでしまった。</p>
+<p>何か意味のあることを書こうとした結果、書けなくなった。書いているうちに「これを書いて意味があるのか？」とか考え出すともうだめである。</p>
+<p>だから、これからは意味のあることを書かないことにした。</p>
+<p>前回、DartとFlutterの技術書を列挙したが、読んでみた結果、以下の３冊が良かった。</p>
+<ul>
+<li><a href="https://amzn.asia/d/g3r1gVp" class="main__link">Jonathan Sande, <em>Dart Apprentice: Fundamentals</em>, (Kodeco Inc., 2022)</a></li>
+<li><a href="https://amzn.asia/d/h0XmfPW" class="main__link">Jonathan Sande, <em>Dart Apprentice: Beyond the Basics</em>, (Kodeco Inc., 2022)</a></li>
+<li><a href="https://amzn.asia/d/dBNcqpW" class="main__link">Michael Katz, Kevin David Moore &amp; Vincent Ngo, <em>Flutter Apprentice</em> (Razeware LLC., 2022)</a></li>
+</ul>
+<p>Flutter Apprenticeは、最後のプラットフォーム別の部分はまだ読んでいないが、だいたい良かった。</p>
+<p>ただ、問題は、画面遷移には<code class="main__inline-code">go_router</code>、状態管理には<code class="main__inline-code">provider</code>、DBライブラリは<code class="main__inline-code">moor</code>を使っている点で、<code class="main__inline-code">go_router</code>はFlutterに取り込まれたパッケージなのでこれを使っているのは自然なのだが、単純な画面遷移は問題なくても、ネストした複雑なものを作ろうとするとまだ機能が足りていないというようなことをRedditで読んだので、実際の開発に使っていいものか迷っている。ノートアプリの開発には<code class="main__inline-code">Beamer</code>か<code class="main__inline-code">AutoRoute</code>を選ぶかもしれない。</p>
+<p><code class="main__inline-code">provider</code>は<code class="main__inline-code">Riverpod</code>という改善されたものが出ているので、そっちを使いたい。他にも多数状態管理のためのライブラリがあるらしく悩ましいが、とりあえず<code class="main__inline-code">Riverpod</code>を使ってみようと思う。</p>
+<p><code class="main__inline-code">moor</code>はAndroidアプリ開発に使う<code class="main__inline-code">Room</code>のFlutter版という位置付けらしく、<code class="main__inline-code">Room</code>を逆さにして<code class="main__inline-code">moor</code>らしい。あと、すでにパッケージ名が変わっていて、今は後継版の<code class="main__inline-code">drift</code>を使うことが推奨されている。</p>
+<p>そういう訳で、アプリ開発で骨組みとなるようなところの解説が、微妙に古いライブラリや使わなさそうなライブラリをベースに行われていて、おまけにそれぞれの解説も非常に薄いというか、さらっと書かれてるので、この本をもってFlutterをマスターとは到底言えないというのが、読んでみての正直な感想である。ただまぁ、Flutterのようなまだまだ変更の多いフレームワークの解説書が存在するだけでありがたい訳だし、とりあえずお手本に従ってアプリを組んで感覚をつかむという点では非常に良い本だったと思う。</p>
+<p>本を読んだ後何をしていたかということはまた別の記事で。</p>
+
+  </article><article class="main__post post">
+    <h2 class="post__title"><a class="main__link" href="/2023/03/DartとFlutterを学ぶための技術書について/">DartとFlutterを学ぶための技術書について</a></h2>
     <div class="post-meta">
       <time class="post-meta__date date" datetime="2023-03-01T09:30:00.000Z">Wednesday, 1 March 2023</time>
       <ul class="post-meta__tag-list tag-list"><li class="tag-list__tag tag"><a href="/tags/Dart/" class="tag__link">Dart</a></li>
@@ -37,6 +62,7 @@
 <p>なので今日のブログは要は泣き言である。2回目にして泣き言とは情けない。</p>
 <p>以下の内容は端的に言えば「つらい」ということで、読む価値はありません。ここまで読んでくださってありがとうございました。FlutterやDartの本を探している人は読むと少しは参考になることもあるかもしれません。</p>
 <h3>さらに勉強を進めた結果、特にFlutterの本に関して下記の評価を改めなければならないと感じつつある。もう少しFlutterについて理解を深めた後に改めて記事を書き直したいが、基本的には<em>Flutter Apprentice</em>をおすすめしたい。(2023年3月4日）</h3>
+<h3>書いた（2023年3月30日）→ <a href="/2023/03/Dart%E3%81%A8Flutter%E3%82%92%E5%AD%A6%E3%81%B6%E3%81%9F%E3%82%81%E3%81%AE%E6%8A%80%E8%A1%93%E6%9B%B8%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%EF%BC%92/" class="main__link">DartとFlutterを学ぶための技術書について２</a></h3>
 <p>購入した書籍<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>：</p>
 <ol>
 <li><a href="https://amzn.asia/d/g3r1gVp" class="main__link">Jonathan Sande, <em>Dart Apprentice: Fundamentals</em>, (Kodeco Inc., 2022)</a></li>
@@ -81,7 +107,7 @@
           </ul>
           <ul class="tag-cloud"><li class="tag-cloud__tag tag"><a href="/tags/Dart/" class="tag__link" data-weight="8">Dart</a></li>
 <li class="tag-cloud__tag tag"><a href="/tags/Flutter/" class="tag__link" data-weight="8">Flutter</a></li>
-<li class="tag-cloud__tag tag"><a href="/tags/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/" class="tag__link" data-weight="8">アプリ開発</a></li>
+<li class="tag-cloud__tag tag"><a href="/tags/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/" class="tag__link" data-weight="2">アプリ開発</a></li>
 <li class="tag-cloud__tag tag"><a href="/tags/%E6%8A%80%E8%A1%93%E6%9B%B8/" class="tag__link" data-weight="8">技術書</a></li>
 <li class="tag-cloud__tag tag"><a href="/tags/%E9%96%8B%E7%99%BA%E6%97%A5%E8%A8%98/" class="tag__link" data-weight="10">開発日記</a></li></ul>
           
