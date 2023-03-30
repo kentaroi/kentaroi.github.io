@@ -18,6 +18,8 @@ redirect_from: /2023/03/books-to-learn-dart-and-flutter
 
 ### さらに勉強を進めた結果、特にFlutterの本に関して下記の評価を改めなければならないと感じつつある。もう少しFlutterについて理解を深めた後に改めて記事を書き直したいが、基本的には*Flutter Apprentice*をおすすめしたい。(2023年3月4日）
 
+### 書いた（2023年3月30日）→ [DartとFlutterを学ぶための技術書について２](/2023/03/DartとFlutterを学ぶための技術書について２/)
+
 購入した書籍[^1]：
 1. [Jonathan Sande, *Dart Apprentice: Fundamentals*, (Kodeco Inc., 2022)](https://amzn.asia/d/g3r1gVp)
 2. [Jonathan Sande, *Dart Apprentice: Beyond the Basics*, (Kodeco Inc., 2022)](https://amzn.asia/d/h0XmfPW)
