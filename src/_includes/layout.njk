@@ -3,6 +3,13 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% if title %}
+      <meta property="og:title" content="{{ title }}">
+    {% endif %}
+    {% if image %}
+      <meta property="og:image" content="{{ image }}">
+    {% endif %}
+    <meta property="og:site_name" content="{{ metadata.title }}">
     <link rel="stylesheet" href="/css/style.css">
     <link href="/css/prism-gruvbox-dark.css" rel="stylesheet">
     <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Kentaro Imai">
