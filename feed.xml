@@ -3,7 +3,7 @@
   <title>Kentaro Imai</title>
   <link href="http://kentaroimai.com/feed.xml" rel="self"/>
   <link href="http://kentaroimai.com/"/>
-  <updated>2023-03-30T14:00:00Z</updated>
+  <updated>2023-04-01T06:00:00Z</updated>
   <id>http://kentaroimai.com/</id>
   <author>
     <name>Kentaro Imai</name>
@@ -93,6 +93,24 @@
 &lt;p&gt;&lt;code class=&quot;main__inline-code&quot;&gt;moor&lt;/code&gt;はAndroidアプリ開発に使う&lt;code class=&quot;main__inline-code&quot;&gt;Room&lt;/code&gt;のFlutter版という位置付けらしく、&lt;code class=&quot;main__inline-code&quot;&gt;Room&lt;/code&gt;を逆さにして&lt;code class=&quot;main__inline-code&quot;&gt;moor&lt;/code&gt;らしい。あと、すでにパッケージ名が変わっていて、今は後継版の&lt;code class=&quot;main__inline-code&quot;&gt;drift&lt;/code&gt;を使うことが推奨されている。&lt;/p&gt;
 &lt;p&gt;そういう訳で、アプリ開発で骨組みとなるようなところの解説が、微妙に古いライブラリや使わなさそうなライブラリをベースに行われていて、おまけにそれぞれの解説も非常に薄いというか、さらっと書かれてるので、この本をもってFlutterをマスターとは到底言えないというのが、読んでみての正直な感想である。ただまぁ、Flutterのようなまだまだ変更の多いフレームワークの解説書が存在するだけでありがたい訳だし、とりあえずお手本に従ってアプリを組んで感覚をつかむという点では非常に良い本だったと思う。&lt;/p&gt;
 &lt;p&gt;本を読んだ後何をしていたかということはまた別の記事で。&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>部屋を片付けた話</title>
+    <link href="http://kentaroimai.com/2023/04/%E9%83%A8%E5%B1%8B%E3%82%92%E7%89%87%E4%BB%98%E3%81%91%E3%81%9F%E8%A9%B1/"/>
+    <updated>2023-04-01T06:00:00Z</updated>
+    <id>http://kentaroimai.com/2023/04/%E9%83%A8%E5%B1%8B%E3%82%92%E7%89%87%E4%BB%98%E3%81%91%E3%81%9F%E8%A9%B1/</id>
+    <content type="html">&lt;p&gt;先月、Flutterの本を読んだ後、部屋を片付けた。&lt;/p&gt;
+&lt;p&gt;僕はやっぱり生活が苦手な気がする。&lt;/p&gt;
+&lt;p&gt;大学生だった頃に薄々気付いてはいたのだが、おっさんとなった今も何にも変わっていない。&lt;/p&gt;
+&lt;p&gt;片付けは苦手だし、そもそもきっちりと間違いなく何かをすることが苦手である。書き間違えずに文字を紙に書くことが苦手だし、数を数えることも苦手だ。出掛ける前に何度も忘れ物に気づいて行ったり来たりするし、出掛けてもしばしば戻って鍵が閉まっているか確認するし、結局忘れ物があったりする。日常生活のほとんどが苦手な気がしている。&lt;/p&gt;
+&lt;p&gt;本やPCに囲まれて過ごすのが好きな僕は、断捨離やミニマリストが話題になった頃、全く自分に関係ないものと思っていたし、正直なところ今も断捨離という言葉は好きな言葉ではない（僕は物欲肯定派である）が、今回片付けをしているうちに、少しそういうものから学ぶべきなのかもしれないと初めて思った。&lt;/p&gt;
+&lt;p&gt;自分の大切に思っていることに物もお金も時間も最大限投入するために、その他をできるだけ切り捨てるのだ。生活というものを極限まで自分から取り除くと、生活が苦手であるという悪影響が最小限に抑えられるのかもしれない。&lt;/p&gt;
+&lt;p&gt;そんなことが頭に浮かんだりした。&lt;/p&gt;
+&lt;p&gt;でもとりあえずは何もしない。部屋は片付いたのだ。苦手な生活のことは当分考えたくない。&lt;/p&gt;
+&lt;p&gt;それに、部屋は片付いたがアプリは全くできていない。&lt;/p&gt;
+&lt;p&gt;今月からはアプリ開発に集中したい。&lt;/p&gt;
 </content>
   </entry>
 </feed>
