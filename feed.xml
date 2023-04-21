@@ -3,7 +3,7 @@
   <title>Kentaro Imai</title>
   <link href="http://kentaroimai.com/feed.xml" rel="self"/>
   <link href="http://kentaroimai.com/"/>
-  <updated>2023-04-01T06:00:00Z</updated>
+  <updated>2023-04-21T15:45:00Z</updated>
   <id>http://kentaroimai.com/</id>
   <author>
     <name>Kentaro Imai</name>
@@ -111,6 +111,44 @@
 &lt;p&gt;でもとりあえずは何もしない。部屋は片付いたのだ。苦手な生活のことは当分考えたくない。&lt;/p&gt;
 &lt;p&gt;それに、部屋は片付いたがアプリは全くできていない。&lt;/p&gt;
 &lt;p&gt;今月からはアプリ開発に集中したい。&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>ノートアプリのおおまかな設計段階ですでに悩んでいる</title>
+    <link href="http://kentaroimai.com/2023/04/%E3%83%8E%E3%83%BC%E3%83%88%E3%82%A2%E3%83%97%E3%83%AA%E3%81%AE%E3%81%8A%E3%81%8A%E3%81%BE%E3%81%8B%E3%81%AA%E8%A8%AD%E8%A8%88%E6%AE%B5%E9%9A%8E%E3%81%A7%E3%81%99%E3%81%A7%E3%81%AB%E6%82%A9%E3%82%93%E3%81%A7%E3%81%84%E3%82%8B/"/>
+    <updated>2023-04-21T15:45:00Z</updated>
+    <id>http://kentaroimai.com/2023/04/%E3%83%8E%E3%83%BC%E3%83%88%E3%82%A2%E3%83%97%E3%83%AA%E3%81%AE%E3%81%8A%E3%81%8A%E3%81%BE%E3%81%8B%E3%81%AA%E8%A8%AD%E8%A8%88%E6%AE%B5%E9%9A%8E%E3%81%A7%E3%81%99%E3%81%A7%E3%81%AB%E6%82%A9%E3%82%93%E3%81%A7%E3%81%84%E3%82%8B/</id>
+    <content type="html">&lt;p&gt;先月部屋を片付けた後、&lt;code class=&quot;main__inline-code&quot;&gt;Riverpod&lt;/code&gt;をさらっと勉強したりしたが、取り立てて面白い話もない。&lt;/p&gt;
+&lt;p&gt;その後、サーバサイドの勉強をしていた。&lt;/p&gt;
+&lt;p&gt;作ろうとしているアプリはノートアプリなのでクライアントだけで完結するアプリにしても良いのだが、マルチデバイス対応をするつもりなのでやはりサーバベースで作りたい。この辺りは意見が分かれるところなのかもしれないが……。&lt;/p&gt;
+&lt;p&gt;もしかすると例えば&lt;code class=&quot;main__inline-code&quot;&gt;Realm&lt;/code&gt;などを使って作るのが正解なのかもしれないが、&lt;code class=&quot;main__inline-code&quot;&gt;Realm&lt;/code&gt;のことはよく分かっていないし、こういうコア部分をプロプライエタリなもので賄うのは怖い。&lt;/p&gt;
+&lt;p&gt;そういう訳で、サーバサイドを書かねばならない。&lt;/p&gt;
+&lt;p&gt;問題は、僕がサーバサイドのコードを書いていたのはもう10年以上前ってことで、ちゃんと勉強をしなおさないといけない。&lt;/p&gt;
+&lt;p&gt;以前は&lt;code class=&quot;main__inline-code&quot;&gt;Ruby on Rails&lt;/code&gt;をさわっていたが、もう随分前のことでもあるし、まっさらな気持ちでサーバサイドの技術を選ぶことにした。&lt;/p&gt;
+&lt;p&gt;とは言っても中々難しい。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;MVCやその亜種をベースにしたサーバサイドのフレームワークがいろんな言語で出ているが、そういうのを選ぶくらいなら以前使っていた&lt;code class=&quot;main__inline-code&quot;&gt;Rails&lt;/code&gt;を選ぶのが一番楽な気がする。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;最近は&lt;code class=&quot;main__inline-code&quot;&gt;JavaScript&lt;/code&gt;をちょっと書いていたので、そういう意味では&lt;code class=&quot;main__inline-code&quot;&gt;JavaScript / TypeScript&lt;/code&gt;のサーバサイドフレームワークのどれかを使うのも良いかもしれない。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;一方で、個人的に将来的に作りたいサービスがあって、それには&lt;code class=&quot;main__inline-code&quot;&gt;Elixir&lt;/code&gt;と&lt;code class=&quot;main__inline-code&quot;&gt;Phoenix&lt;/code&gt;がフィットする気がしていて、そこに繋げる意味では&lt;code class=&quot;main__inline-code&quot;&gt;Elixir&lt;/code&gt;と&lt;code class=&quot;main__inline-code&quot;&gt;Phoenix&lt;/code&gt;で作りたい。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;で、とりあえず、やって損はないだろうということで、&lt;code class=&quot;main__inline-code&quot;&gt;Elixir&lt;/code&gt;の勉強をしていたのが最近の話だ。&lt;/p&gt;
+&lt;p&gt;ただ、今悩んでいることは、ノートの整合性保持で、ここの部分の設計をどうすべきなのか、決めきれないでいる。&lt;/p&gt;
+&lt;p&gt;例えばウェブアプリであれば、ユーザはおそらくオンラインだし、オフライン編集ができなくてもユーザは納得してくれるだろう。オンラインであれば、おひとり様用ウェブアプリの場合、編集後即サーバに&lt;code class=&quot;main__inline-code&quot;&gt;POST/PUT/PATCH&lt;/code&gt;すれば整合性の問題はほぼ起こらないだろう。&lt;/p&gt;
+&lt;p&gt;逆に、スマホアプリの場合、ユーザはオフラインでノート編集できることを期待する。ということは何らかのデータの競合解消ロジックが必要になる。&lt;/p&gt;
+&lt;p&gt;複数人で編集しなくても、ひとりが複数のデバイスから編集する場合、コンフリクトが起こる可能性は高い。&lt;/p&gt;
+&lt;p&gt;この整合性問題を解決するための技術が&lt;code class=&quot;main__inline-code&quot;&gt;OT&lt;/code&gt;(Operational Transformation：操作変換)とか&lt;code class=&quot;main__inline-code&quot;&gt;CRDT&lt;/code&gt;(Conflict-free Replicated Data Type)とか呼ばれるもので、この辺の知識が全く足りていない。&lt;/p&gt;
+&lt;p&gt;この辺の実装は&lt;code class=&quot;main__inline-code&quot;&gt;JavaScript&lt;/code&gt;で書かれているものが多い気がするので、もしかするとサーバサイドはそういうライブラリを利用して&lt;code class=&quot;main__inline-code&quot;&gt;JavaScript&lt;/code&gt;で書くべきなのかもしれない（折角&lt;code class=&quot;main__inline-code&quot;&gt;Elixir&lt;/code&gt;の勉強をしていたところではあるが）。&lt;/p&gt;
+&lt;p&gt;ということで、サーバサイドを何で書くかということすら未だ確定できていないのである。&lt;/p&gt;
+&lt;p&gt;とりあえず、泥縄ではあるが、今から&lt;code class=&quot;main__inline-code&quot;&gt;OT&lt;/code&gt;や&lt;code class=&quot;main__inline-code&quot;&gt;CRDT&lt;/code&gt;の勉強をしようと思う。ただ、例えば&lt;code class=&quot;main__inline-code&quot;&gt;CRDT&lt;/code&gt;と言ってもいろんなやり方が提案されているらしいので、それらの中から自分のアプリに合ったものを選ぶ必要がある。&lt;/p&gt;
+&lt;p&gt;もし詳しい人がいたら、何らか情報をもらえると嬉しいです。&lt;/p&gt;
+&lt;p&gt;あと、あんまり大変なようなら、とりあえずは個人使用を想定したノートアプリなのだから、競合解消ロジックなしで一旦リリースしてから考えるということも考えてはいる。&lt;/p&gt;
 </content>
   </entry>
 </feed>
