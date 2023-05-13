@@ -3,7 +3,7 @@
   <title>Kentaro Imai</title>
   <link href="http://kentaroimai.com/feed.xml" rel="self"/>
   <link href="http://kentaroimai.com/"/>
-  <updated>2023-04-21T15:45:00Z</updated>
+  <updated>2023-05-13T19:00:00Z</updated>
   <id>http://kentaroimai.com/</id>
   <author>
     <name>Kentaro Imai</name>
@@ -132,7 +132,7 @@
 &lt;p&gt;MVCやその亜種をベースにしたサーバサイドのフレームワークがいろんな言語で出ているが、その中から選ぶなら以前使っていた&lt;code class=&quot;main__inline-code&quot;&gt;Rails&lt;/code&gt;を選ぶのが一番楽な気がする。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;最近は&lt;code class=&quot;main__inline-code&quot;&gt;JavaScript&lt;/code&gt;をちょっと書いていたので、そういう意味では&lt;code class=&quot;main__inline-code&quot;&gt;JavaScript / TypeScript&lt;/code&gt;のサーバサイドフレームワークのいずれかを使うのも良いかもしれない。&lt;/p&gt;
+&lt;p&gt;最近は&lt;code class=&quot;main__inline-code&quot;&gt;JavaScript&lt;/code&gt;をちょっと書いていたので、そういう意味では&lt;code class=&quot;main__inline-code&quot;&gt;JavaScript&lt;/code&gt;/&lt;code class=&quot;main__inline-code&quot;&gt;TypeScript&lt;/code&gt;のサーバサイドフレームワークのいずれかを使うのも良いかもしれない。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;一方で、実は僕には将来作りたいサービスがあって、それには&lt;code class=&quot;main__inline-code&quot;&gt;Elixir&lt;/code&gt;と&lt;code class=&quot;main__inline-code&quot;&gt;Phoenix&lt;/code&gt;がフィットする気がしていて、そこに繋げる意味では&lt;code class=&quot;main__inline-code&quot;&gt;Elixir&lt;/code&gt;と&lt;code class=&quot;main__inline-code&quot;&gt;Phoenix&lt;/code&gt;で作りたい。&lt;/p&gt;
@@ -140,7 +140,7 @@
 &lt;/ul&gt;
 &lt;p&gt;で、とりあえず、やって損はないだろうということで、&lt;code class=&quot;main__inline-code&quot;&gt;Elixir&lt;/code&gt;の勉強をしていたのが最近の話だ。&lt;/p&gt;
 &lt;p&gt;ただ、今悩んでいることは、ノートの整合性保持で、ここの部分の設計をどうすべきなのか、決めきれないでいる。&lt;/p&gt;
-&lt;p&gt;例えばウェブアプリであれば、ユーザはおそらくオンラインだし、オフライン編集ができなくてもユーザは納得してくれるだろう。オンラインであれば、おひとり様用ウェブアプリの場合、編集後即サーバに&lt;code class=&quot;main__inline-code&quot;&gt;POST/PUT/PATCH&lt;/code&gt;すれば整合性の問題はほぼ起こらないだろう。&lt;/p&gt;
+&lt;p&gt;例えばウェブアプリであれば、ユーザはおそらくオンラインだし、オフライン編集ができなくてもユーザは納得してくれるだろう。オンラインであれば、おひとり様用ウェブアプリの場合、編集後即サーバに&lt;code class=&quot;main__inline-code&quot;&gt;POST&lt;/code&gt;/&lt;code class=&quot;main__inline-code&quot;&gt;PUT&lt;/code&gt;/&lt;code class=&quot;main__inline-code&quot;&gt;PATCH&lt;/code&gt;/&lt;code class=&quot;main__inline-code&quot;&gt;DELETE&lt;/code&gt;すれば整合性の問題はほぼ起こらないだろう。&lt;/p&gt;
 &lt;p&gt;逆に、スマホアプリの場合、ユーザはオフラインでノート編集できることを期待する。ということは何らかのデータの競合解消ロジックが必要になる。&lt;/p&gt;
 &lt;p&gt;複数人で編集する場合はもちろん整合性の問題が起きるが、そうでなくても、ひとりが複数のデバイスから編集する場合、コンフリクトが起こる可能性は高い。&lt;/p&gt;
 &lt;p&gt;この整合性問題を解決するための技術が&lt;code class=&quot;main__inline-code&quot;&gt;OT&lt;/code&gt;(Operational Transformation：操作変換)とか&lt;code class=&quot;main__inline-code&quot;&gt;CRDT&lt;/code&gt;(Conflict-free Replicated Data Type)とか呼ばれるもので、この辺の知識が全く足りていない。&lt;/p&gt;
@@ -149,6 +149,26 @@
 &lt;p&gt;とりあえず、泥縄ではあるが、今から&lt;code class=&quot;main__inline-code&quot;&gt;OT&lt;/code&gt;や&lt;code class=&quot;main__inline-code&quot;&gt;CRDT&lt;/code&gt;の勉強をしようと思う。ただ、例えば&lt;code class=&quot;main__inline-code&quot;&gt;CRDT&lt;/code&gt;と言ってもいろんなやり方が提案されているらしいので、それらの中から自分のアプリに合ったものを選ぶ必要がある。&lt;/p&gt;
 &lt;p&gt;もし詳しい人がいたら、何らか情報をもらえると嬉しいです。&lt;/p&gt;
 &lt;p&gt;あと、あんまり大変なようなら、とりあえずは個人使用を想定したノートアプリなのだから、競合解消ロジックなしで一旦リリースしてから考えるということも考えてはいる。&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>誰のために書くのかがあやふやだったので決めた</title>
+    <link href="http://kentaroimai.com/2023/05/%E8%AA%B0%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AB%E6%9B%B8%E3%81%8F%E3%81%AE%E3%81%8B%E3%81%8C%E3%81%82%E3%82%84%E3%81%B5%E3%82%84%E3%81%A0%E3%81%A3%E3%81%9F%E3%81%AE%E3%81%A7%E6%B1%BA%E3%82%81%E3%81%9F/"/>
+    <updated>2023-05-13T19:00:00Z</updated>
+    <id>http://kentaroimai.com/2023/05/%E8%AA%B0%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AB%E6%9B%B8%E3%81%8F%E3%81%AE%E3%81%8B%E3%81%8C%E3%81%82%E3%82%84%E3%81%B5%E3%82%84%E3%81%A0%E3%81%A3%E3%81%9F%E3%81%AE%E3%81%A7%E6%B1%BA%E3%82%81%E3%81%9F/</id>
+    <content type="html">&lt;p&gt;このブログは始まったばかりだけど、およそ一月に１、２記事程度しか書けていない。これは望ましい頻度でもないし、もっと記事を書けたらなと思いつつも、僕自身は正直上出来だと感じている。&lt;/p&gt;
+&lt;p&gt;それは小学生の頃、日記を文字通り３日以内に止めてしまったり、読書感想文が数行しか書けなかった僕にとっては、ブログが続いていること自体が驚くべき進歩と感じられるからだ。&lt;/p&gt;
+&lt;p&gt;これまで数記事を書いて、僕にもブログが書けることは書けるということは分かった。これで別に良いのだが、しかし、一歩先に進めてみたいと思った。&lt;/p&gt;
+&lt;p&gt;僕の書くものなど所詮何の役にも立たない。そもそも興味を持ってもらえるほどの人間でもないし、文章が上手い訳でもない。しかし、極一部の誰かには多少刺さる、または掠るぐらいのものを書いてみたいという欲があるような気がする。&lt;/p&gt;
+&lt;p&gt;そこで、誰のために書くのかということを明確にしようと思う。インターネットの向こうの誰かに向かってババーンとここに宣言するという意味ではなくて、僕自身に対する宣言というか、戒めというか、何かそういうようなものである。&lt;/p&gt;
+&lt;p&gt;誰に読まれても良いが、僕としてはそういうつもりで書くということだ。&lt;/p&gt;
+&lt;h2&gt;誰のために書くのか&lt;/h2&gt;
+&lt;p&gt;このブログは将来、自作のアプリなりサービスなりで何らかのどでかいことを成そうと考えている人を想定して書くことにする。&lt;/p&gt;
+&lt;p&gt;ちなみに僕は、自作のアプリなりサービスなりで何らかのどでかいことを成そうと考えている人であるが、未だ成していない人である。&lt;/p&gt;
+&lt;p&gt;何事か成してから、当時を振り返って書かれたものも面白いとは思うが、成してない人間が浮かれたりへこたれたり落ち込んだりのたうち回っているものを読む方が僕が好きなので、それを僕も書いてみようという試みである。&lt;/p&gt;
+&lt;p&gt;実際のところ、何事もなしていないから、結局それしか書けないんだけど。&lt;/p&gt;
+&lt;p&gt;内容に関しては、たぶんプログラミング関連の話題が多くなる気はするが、それに限定するつもりもない。好き勝手にその時々に書きたいことを書くつもりだ。&lt;/p&gt;
 </content>
   </entry>
 </feed>

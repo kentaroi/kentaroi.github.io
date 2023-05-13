@@ -50,7 +50,7 @@
 <p>MVCやその亜種をベースにしたサーバサイドのフレームワークがいろんな言語で出ているが、その中から選ぶなら以前使っていた<code class="main__inline-code">Rails</code>を選ぶのが一番楽な気がする。</p>
 </li>
 <li>
-<p>最近は<code class="main__inline-code">JavaScript</code>をちょっと書いていたので、そういう意味では<code class="main__inline-code">JavaScript / TypeScript</code>のサーバサイドフレームワークのいずれかを使うのも良いかもしれない。</p>
+<p>最近は<code class="main__inline-code">JavaScript</code>をちょっと書いていたので、そういう意味では<code class="main__inline-code">JavaScript</code>/<code class="main__inline-code">TypeScript</code>のサーバサイドフレームワークのいずれかを使うのも良いかもしれない。</p>
 </li>
 <li>
 <p>一方で、実は僕には将来作りたいサービスがあって、それには<code class="main__inline-code">Elixir</code>と<code class="main__inline-code">Phoenix</code>がフィットする気がしていて、そこに繋げる意味では<code class="main__inline-code">Elixir</code>と<code class="main__inline-code">Phoenix</code>で作りたい。</p>
@@ -58,7 +58,7 @@
 </ul>
 <p>で、とりあえず、やって損はないだろうということで、<code class="main__inline-code">Elixir</code>の勉強をしていたのが最近の話だ。</p>
 <p>ただ、今悩んでいることは、ノートの整合性保持で、ここの部分の設計をどうすべきなのか、決めきれないでいる。</p>
-<p>例えばウェブアプリであれば、ユーザはおそらくオンラインだし、オフライン編集ができなくてもユーザは納得してくれるだろう。オンラインであれば、おひとり様用ウェブアプリの場合、編集後即サーバに<code class="main__inline-code">POST/PUT/PATCH</code>すれば整合性の問題はほぼ起こらないだろう。</p>
+<p>例えばウェブアプリであれば、ユーザはおそらくオンラインだし、オフライン編集ができなくてもユーザは納得してくれるだろう。オンラインであれば、おひとり様用ウェブアプリの場合、編集後即サーバに<code class="main__inline-code">POST</code>/<code class="main__inline-code">PUT</code>/<code class="main__inline-code">PATCH</code>/<code class="main__inline-code">DELETE</code>すれば整合性の問題はほぼ起こらないだろう。</p>
 <p>逆に、スマホアプリの場合、ユーザはオフラインでノート編集できることを期待する。ということは何らかのデータの競合解消ロジックが必要になる。</p>
 <p>複数人で編集する場合はもちろん整合性の問題が起きるが、そうでなくても、ひとりが複数のデバイスから編集する場合、コンフリクトが起こる可能性は高い。</p>
 <p>この整合性問題を解決するための技術が<code class="main__inline-code">OT</code>(Operational Transformation：操作変換)とか<code class="main__inline-code">CRDT</code>(Conflict-free Replicated Data Type)とか呼ばれるもので、この辺の知識が全く足りていない。</p>
@@ -80,21 +80,23 @@
             <li class="site-nav__item"><a class="site-nav__link" href="/feed/">Feed</a></li>
             <li class="site-nav__item"><a class="site-nav__link" href="/about/">About</a></li>
           </ul>
-          <ul class="tag-cloud"><li class="tag-cloud__tag tag"><a href="/tags/CRDT/" class="tag__link" data-weight="5">CRDT</a></li>
+          <ul class="tag-cloud"><li class="tag-cloud__tag tag"><a href="/tags/CRDT/" class="tag__link" data-weight="4">CRDT</a></li>
 <li class="tag-cloud__tag tag"><a href="/tags/Dart/" class="tag__link" data-weight="9">Dart</a></li>
-<li class="tag-cloud__tag tag"><a href="/tags/Elixir/" class="tag__link" data-weight="5">Elixir</a></li>
+<li class="tag-cloud__tag tag"><a href="/tags/Elixir/" class="tag__link" data-weight="4">Elixir</a></li>
 <li class="tag-cloud__tag tag"><a href="/tags/Flutter/" class="tag__link" data-weight="9">Flutter</a></li>
-<li class="tag-cloud__tag tag"><a href="/tags/OT/" class="tag__link" data-weight="5">OT</a></li>
+<li class="tag-cloud__tag tag"><a href="/tags/OT/" class="tag__link" data-weight="4">OT</a></li>
 <li class="tag-cloud__tag tag"><a href="/tags/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/" class="tag__link" data-weight="9">アプリ開発</a></li>
 <li class="tag-cloud__tag tag"><a href="/tags/%E6%8A%80%E8%A1%93%E6%9B%B8/" class="tag__link" data-weight="9">技術書</a></li>
 <li class="tag-cloud__tag tag"><a href="/tags/%E9%96%8B%E7%99%BA%E6%97%A5%E8%A8%98/" class="tag__link" data-weight="10">開発日記</a></li>
-<li class="tag-cloud__tag tag"><a href="/tags/%E9%9B%91%E8%A8%98/" class="tag__link" data-weight="5">雑記</a></li></ul>
+<li class="tag-cloud__tag tag"><a href="/tags/%E9%9B%91%E8%A8%98/" class="tag__link" data-weight="9">雑記</a></li></ul>
           
   <ul class="related-nav">
       
         <li class="related-nav__year"><time class="year" datetime="2023"><a class="year__link" href="/2023/">2023</a></time>
           <ul class="related-nav__months">
-        <li class="related-nav__month"><time class="month" datetime="2023-04"><a class="month__link" href="/2023/04/">April</a></time>
+        <li class="related-nav__month"><time class="month" datetime="2023-05"><a class="month__link" href="/2023/05/">May</a></time>
+          <ul class="related-nav__posts"><li class="related-nav__post"><a class="related-nav__link" href="/2023/05/誰のために書くのかがあやふやだったので決めた/">誰のために書くのかがあやふやだったので決めた</a></li></ul>
+          </li><li class="related-nav__month"><time class="month" datetime="2023-04"><a class="month__link" href="/2023/04/">April</a></time>
           <ul class="related-nav__posts"><li class="related-nav__post"><a class="related-nav__link" href="/2023/04/ノートアプリのおおまかな設計段階ですでに悩んでいる/">ノートアプリのおおまかな設計段階ですでに悩んでいる</a></li><li class="related-nav__post"><a class="related-nav__link" href="/2023/04/部屋を片付けた話/">部屋を片付けた話</a></li></ul>
           </li><li class="related-nav__month"><time class="month" datetime="2023-03"><a class="month__link" href="/2023/03/">March</a></time>
           <ul class="related-nav__posts"><li class="related-nav__post"><a class="related-nav__link" href="/2023/03/DartとFlutterを学ぶための技術書について２/">DartとFlutterを学ぶための技術書について２</a></li><li class="related-nav__post"><a class="related-nav__link" href="/2023/03/DartとFlutterを学ぶための技術書について/">DartとFlutterを学ぶための技術書について</a></li></ul>
