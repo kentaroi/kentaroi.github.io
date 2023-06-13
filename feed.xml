@@ -3,7 +3,7 @@
   <title>Kentaro Imai</title>
   <link href="http://kentaroimai.com/feed.xml" rel="self"/>
   <link href="http://kentaroimai.com/"/>
-  <updated>2023-05-13T19:00:00Z</updated>
+  <updated>2023-06-13T16:00:00Z</updated>
   <id>http://kentaroimai.com/</id>
   <author>
     <name>Kentaro Imai</name>
@@ -169,6 +169,33 @@
 &lt;p&gt;何事か成してから、当時を振り返って書かれたものも面白いとは思うが、成してない人間が浮かれたりへこたれたり落ち込んだりのたうち回っているものを読む方が僕が好きなので、それを僕も書いてみようという試みである。&lt;/p&gt;
 &lt;p&gt;実際のところ、何事もなしていないから、結局それしか書けないんだけど。&lt;/p&gt;
 &lt;p&gt;内容に関しては、たぶんプログラミング関連の話題が多くなる気はするが、それに限定するつもりもない。好き勝手にその時々に書きたいことを書くつもりだ。&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>現状報告</title>
+    <link href="http://kentaroimai.com/2023/06/%E7%8F%BE%E7%8A%B6%E5%A0%B1%E5%91%8A/"/>
+    <updated>2023-06-13T16:00:00Z</updated>
+    <id>http://kentaroimai.com/2023/06/%E7%8F%BE%E7%8A%B6%E5%A0%B1%E5%91%8A/</id>
+    <content type="html">&lt;p&gt;先日、ElixirとPhoenixの勉強をしてみたので、それを元にブログ記事を書いてみたら、なぜか糞みたいな記事ができあがったので、とりあえずお蔵にした。&lt;/p&gt;
+&lt;p&gt;ブログ記事を書く能力に欠けているのかも。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://kentaroimai.com/2023/05/%E8%AA%B0%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AB%E6%9B%B8%E3%81%8F%E3%81%AE%E3%81%8B%E3%81%8C%E3%81%82%E3%82%84%E3%81%B5%E3%82%84%E3%81%A0%E3%81%A3%E3%81%9F%E3%81%AE%E3%81%A7%E6%B1%BA%E3%82%81%E3%81%9F/&quot; class=&quot;main__link&quot;&gt;前の記事&lt;/a&gt;から１ヶ月経ったこともあるし、とりあえず現状を書いておく。&lt;/p&gt;
+&lt;p&gt;まず、なぜブログを書けていないのかというと、毎日毎日、自分の思うほど進捗していないからで、一段落ついた深夜、ブログ書いた方がいいかもって思った時には、もう心身ともに限界な感じで寝てしまっている自分がいるのである。&lt;/p&gt;
+&lt;p&gt;で、&lt;a href=&quot;http://kentaroimai.com/2023/02/%E6%96%B0%E3%81%97%E3%81%84%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88/&quot; class=&quot;main__link&quot;&gt;前に書いたけど&lt;/a&gt;、僕はノートアプリを作ろうとしていて、今その技術的なピースを揃えている途中なのである。こんな感じ：&lt;/p&gt;
+&lt;h3&gt;フロントエンド&lt;/h3&gt;
+&lt;p&gt;Dart + Flutterを予定している。ただし、CRDTの状況によっては他の選択肢も考慮する必要があるかもしれない。&lt;/p&gt;
+&lt;h3&gt;バックエンド&lt;/h3&gt;
+&lt;p&gt;Elixir + Phoenix予定。ただし、CRDTの状況によっては他の選択肢（JavaScriptで書かれた何らかのウェブフレームワーク）も考慮する必要があるかもしれない。&lt;/p&gt;
+&lt;h3&gt;データベース&lt;/h3&gt;
+&lt;p&gt;PostgreSQLが良い気がするが、CRDTのためにRedisなどのNoSQLを追加で用意しなければいけないかもしれない。（PostgreSQLもRedis等NoSQLも僕は詳しくない）&lt;/p&gt;
+&lt;h3&gt;CRDT&lt;/h3&gt;
+&lt;p&gt;オフライン編集のために何らかの手立てを考えなければいけない。&lt;a href=&quot;https://ja.wikipedia.org/wiki/%E6%93%8D%E4%BD%9C%E5%A4%89%E6%8F%9B&quot; class=&quot;main__link&quot;&gt;OT&lt;/a&gt;よりも最近は&lt;a href=&quot;https://josephg.com/blog/crdts-are-the-future/&quot; class=&quot;main__link&quot;&gt;CRDTが良い&lt;/a&gt;らしく中でもYjsが抜きん出ているらしい、というのが僕の現状認識なのだが、YjsはJavaScriptで書かれているので、ウェブアプリとかElectronアプリならそれでいけるが、スマホアプリを作るとなると中々難しい。&lt;/p&gt;
+&lt;p&gt;なので、Yjsを他言語（DartとElixir）で実装するのがこのまま突き進んだ場合の未来、なのだが「それ可能なの？？」と正直若干怖気づいている。&lt;/p&gt;
+&lt;h3&gt;デプロイ&lt;/h3&gt;
+&lt;p&gt;Kubernetesの勉強を中途半端にしている状態。大丈夫なのか大変心配。&lt;/p&gt;
+&lt;p&gt;以上が現状なのだが、&lt;/p&gt;
+&lt;p&gt;あんまり技術的なピースが揃っていないことがよく分かる。&lt;/p&gt;
+&lt;p&gt;どうしたらいいのか……&lt;/p&gt;
 </content>
   </entry>
 </feed>
