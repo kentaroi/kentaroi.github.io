@@ -21,6 +21,8 @@ module.exports = function(eleventyConfig) {
       return "";
     }
   });
+  eleventyConfig.addPassthroughCopy("src/products/twlikes/info-for-twlikes.json");
+  eleventyConfig.addPassthroughCopy("src/en/products/twlikes/info-for-twlikes.json");
 
   // For debug
   eleventyConfig.addFilter("inspect", function(obj, desc) {
