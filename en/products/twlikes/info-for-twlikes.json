@@ -83,8 +83,13 @@
     "message": ""
   },
   "5.4.9": {
-    "version": 5040900,
-    "title": "Bug info",
-    "message": ""
+    "version": 5040901,
+    "title": "Thank you and goodbye",
+    "message": "The twlikes app, which started under the name Likes, has been in service for over six years, but due to various changes at X (formerly Twitter), we have decided to end the service.\nWe would like to thank all of our users for their support, which has allowed us to continue until today. Thank you very much.\nWe will continue to provide the twlikes app for the time being as a way to view the likes you have already fetched."
+  },
+  "6.0.0": {
+    "version": 6000001,
+    "title": "Thank you and goodbye",
+    "message": "The twlikes app, which started under the name Likes, has been in service for over six years, but due to various changes at X (formerly Twitter), we have decided to end the service.\nWe would like to thank all of our users for their support, which has allowed us to continue until today. Thank you very much.\nWe will continue to provide the twlikes app for the time being as a way to view the likes you have already fetched."
   }
 }
