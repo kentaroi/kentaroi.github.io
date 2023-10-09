@@ -17,5 +17,5 @@ We used to collect information via [Firebase](https://firebase.google.com/ "Fire
 If you have any questions about this Privacy Policy or our privacy practices. Please tweet or send message us at [@twlikes_app](https://twitter.com/twlikes_app "twlikes app").
 
 
-### Effective: October 9, 2023
+### Effective: October 9, 2023 (twlikes 6.0.0 and above)
 [Archive of Previous Privacy Policies](/products/twlikes/privacy-policy/previous/ "Archive of Previous Privacy Policies")
