@@ -4,37 +4,18 @@ This policy applies to all information collected or submitted on twlikes for iPh
 
 
 ## Twitter
-twlikes is a kind of Twitter client and it needs to make many requests to Twitter's service. Please read Twitter's privacy policy for more details on what they may do with that data.
+twlikes was a kind of Twitter client and it needed to make many requests to Twitter's service. Please read Twitter's privacy policy for more details on what they may do with that data.
+
+With the removal of Twitter API 1.1, twlikes was discontinued, and now it only accesses Twitter API for authentication.
 
 
 ## Information we collect
-To improve twlikes, we collect following information via [Firebase](https://firebase.google.com/ "Firebase"):
-
-|Information  | Reason                                                    |
-|-------------|-----------------------------------------------------------|
-|Crash logs   |To determine the causes of crashes                         |
-|Error logs   |To determine the causes of errors                          |
-|Memory usage |To see if a crash is caused by lack of memory or not       |
-|Disk usage   |To see if a crash is caused by lack of disk space or not   |
-|Device model |To see if a crash is device dependent or not               |
-|OS version   |To see if a crash is OS version dependent or not           |
-|Location     |To determine which languages to prioritize for localization|
-|User behavior|To make UI and fetch scheduling better                     |
-
-## Information usage
-We use the information we collect to improve our apps and customer support.
-
-We do not share your personal information with outside parties with the exception of [Firebase](https://firebase.google.com/ "Firebase"), which is embedded in twlikes to provide crash reporting and basic analytics to help us improve the app.
-
-
-## In-app ads
-twlikes app includes ads.
-Our ad partners and network may use cookies and use related technologies to collect information when ads are delivered to you. However, no personal data is used to target these ads.
+We used to collect information via [Firebase](https://firebase.google.com/ "Firebase"), but now we no longer collect any information because of the termination of the service.
 
 
 ## Contact us
 If you have any questions about this Privacy Policy or our privacy practices. Please tweet or send message us at [@twlikes_app](https://twitter.com/twlikes_app "twlikes app").
 
 
-### Effective: December 1, 2018
-[Archive of Previous Privacy Policies](/products/twlikes/privacy-policy/previous "Archive of Previous Privacy Policies")
+### Effective: October 9, 2023
+[Archive of Previous Privacy Policies](/products/twlikes/privacy-policy/previous/ "Archive of Previous Privacy Policies")
